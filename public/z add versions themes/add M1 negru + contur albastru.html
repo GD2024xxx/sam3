@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add K33P Note</title>
+    <style>
+        /* Stil general pentru pagina */
+        body {
+            background-color: #2b2b2b; /* Gri închis */
+            color: #e0e0e0; /* Gri deschis */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Bara de navigare */
+        #navbar {
+            background-color: #1f1f1f;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        #navbar button {
+            background-color: #3a3a3a;
+            color: #e0e0e0;
+            padding: 12px 20px;
+            margin: 0 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #navbar button:hover {
+            background-color: #4b4b4b;
+            transform: translateY(-2px);
+        }
+
+        #navbar button:active {
+            background-color: #555;
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Frame-ul principal */
+        #frame {
+            width: 80%;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            margin: 30px auto;
+            padding: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #61dafb; /* Albastru deschis */
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .input-larg,
+        .textarea-larg {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 16px;
+            outline: none;
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.5);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-larg:focus,
+        .textarea-larg:focus {
+            border-color: #61dafb;
+            box-shadow: 0 0 8px rgba(97, 218, 251, 0.6);
+        }
+
+        .textarea-larg {
+            height: 80px;
+            resize: none; /* Dezactivează redimensionarea */
+        }
+
+        .save-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .save-button:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+        .save-button:active {
+            background-color: #1e7e34;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Bara de navigare -->
+<div id="navbar">
+    <button onclick="navigateTo('home')">Home</button>
+    <button onclick="navigateTo('add')">Add</button>
+    <button onclick="navigateTo('all_texts')">All Texts</button>
+    <button onclick="navigateTo('settings')">Settings</button>
+</div>
+
+<!--
+<h1>Add KEEP Notex</h1>
+ -->
+
+<div id="frame">
+ <!-- 
+    <label for="situatie">🔆 Contact Reason (CR):</label>   -->
+
+    <input type="text" id="cr"          class="input-larg" placeholder="🔆 Contact Reason (CR):">
+    
+    <input type="text" id="situatie"    class="input-larg" placeholder="🔆 Situație:">
+
+    <input type="text" id="departament" class="input-larg" placeholder="🔆 Departament:">
+
+    <textarea id="anObm"                class="textarea-larg" placeholder="🔆 AN + OBM / OBE:""></textarea>
+
+    <input type="text" id="speech"      class="input-larg" placeholder="🔆 SPEECH:">
+
+     <input type="text" id="regulament" class="input-larg" placeholder="🔆 Regulament:">
+
+
+
+    <button class="save-button" onclick="salveazaDatele()">Save</button>
+</div>
+
+<script>
+    async function salveazaDatele() {
+        const cr = document.getElementById("cr").value;
+        const situatie = document.getElementById("situatie").value;
+        const departament = document.getElementById("departament").value;
+        const anObm = document.getElementById("anObm").value;
+        const speech = document.getElementById("speech").value;
+        const regulament = document.getElementById("regulament").value;
+
+        const data = { cr, situatie, departament, anObm, speech, regulament };
+
+        try {
+            const response = await fetch('http://localhost:3000/save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                alert(result.message);
+            } else {
+                alert('Eroare la salvarea datelor');
+            }
+        } catch (error) {
+            console.error("Eroare:", error);
+        }
+    }
+
+    // Funcție pentru navigare între pagini
+    function navigateTo(page) {
+        const pages = {
+            home: 'index.html',
+            add: 'add.html',
+            all_texts: 'all_texts.html',
+            settings: 'settings.html'
+        };
+        window.location.href = pages[page] || 'index.html';
+    }
+</script>
+
+</body>
+</html>

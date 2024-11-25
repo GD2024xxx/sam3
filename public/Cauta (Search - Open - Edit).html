@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEEP</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #181818;
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: #2c2c2c;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-bar {
+            background-color: #3b3b3b;
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #555;
+            border-radius: 25px;
+            font-size: 16px;
+            color: #ddd;
+            outline: none;
+        }
+
+        .create-note-button {
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid #007BFF;
+            border-radius: 25px;
+            font-size: 16px;
+            color: #007BFF;
+            background-color: #2c2c2c;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 15px;
+            width: 500px;
+            max-width: 90%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 8px;
+            background-color: #333;
+            color: #ddd;
+        }
+
+        textarea.input-field {
+            resize: none;
+            height: 60px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .note {
+            background-color: #2c2c2c;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+
+        /* Container pentru butoane CE, R1, R2, Save, IT, EN */
+        .button-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        /* Butoane stânga (CE, R1, R2) */
+        .left-buttons {
+            display: flex;
+            gap: 0;
+        }
+
+        .left-buttons button {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0;
+        }
+
+        .left-buttons button:hover {
+            background-color: #28a745;
+        }
+
+        .left-buttons button.active {
+            background-color: #218838;
+        }
+
+        /* Buton Save centrat */
+        .center-button {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .save-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .save-button:hover {
+            background-color: #218838;
+        }
+
+        /* Butoane dreapta (IT, EN) */
+        .right-buttons {
+            display: flex;
+            gap: 0px;
+        }
+
+        .right-buttons button {
+            background-color: #3a3a3a;
+            color: #e0e0e0;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .right-buttons button:hover {
+            background-color: #218838;
+        }
+
+        .right-buttons button.active {
+            background-color: #218838;
+        }
+
+        /* Stil pentru butonul PIN cu simbolul de pin */
+        .pin-button {
+            background-color: transparent;
+            color: #ddd;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .pin-button:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <br> <br>
+    <script src="navbar.js"></script>
+    <script src="settingsModal.js"></script>
+
+
+
+
+    <div class="header">
+        <input type="text" class="search-bar" placeholder="Cauta Notes (Search - Open - Edit) ..." id="searchInput" onkeyup="filterNotes()">
+    </div>
+
+    <input class="create-note-button" type="text" value="Take a note..." onclick="openCreateModal()" readonly>
+
+    <div class="modal" id="createNoteModal">
+        <div class="modal-content">
+            <!-- Container pentru butoane -->
+            <div class="button-row">
+        
+                <div class="left-buttons">
+                    <button id="buttonR1" class="active" onclick="selectLeftButton('R1')">User</button>
+                </div>
+
+                <div class="right-buttons">
+                    <button id="buttonIT" class="active" onclick="schimbaLimba('IT'); selectRightButton('IT');">IT</button>
+                    <button id="buttonEN" onclick="schimbaLimba('EN'); selectRightButton('EN');">EN</button>
+                    <!-- Butonul PIN cu iconița de pin -->
+                    <button class="pin-button" onclick="pinNote()">
+                        <i class="fas fa-thumbtack"></i> <!-- Iconița de pin -->
+                    </button>
+                </div>
+            </div>
+
+            <input type="text" id="CR" class="input-field" placeholder="CR:">
+            <input type="text" id="SITUATIE" class="input-field" placeholder="SITUATIE:">
+            <input type="text" id="AN" class="input-field" placeholder="🔆 AN:">
+            <input type="text" id="OBM" class="input-field" placeholder="🔆 OBM / OBE:">
+            <input type="text" id="SPEECH" class="input-field" placeholder="SPEECH:">
+            <input type="text" id="REGULAMENT" class="input-field" placeholder="Regulament (HC + WF)">
+            <textarea id="newNoteContent" class="input-field" placeholder="Take a note..."></textarea>
+
+            <div class="button-row">
+                <div class="left-buttons">
+                </div>
+
+                <div class="center-button">
+                    <button class="save-button" onclick="saveNewNote()">Save</button>
+                </div>
+
+                <div class="right-buttons">
+                    <button id="buttonCE" onclick="selectLeftButton('CE')">CE</button>
+                    <button id="buttonR1" class="active" onclick="selectLeftButton('R1')">R1</button>
+                    <button id="buttonR2" onclick="selectLeftButton('R2')">R2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notesContainer"></div>
+
+    <script>
+        function openCreateModal() {
+            document.getElementById('createNoteModal').style.display = 'flex';
+        }
+
+        function closeCreateModal() {
+            document.getElementById('createNoteModal').style.display = 'none';
+        }
+
+        function saveNewNote() {
+            const noteCR = document.getElementById('CR').value.trim();
+            const noteS = document.getElementById('SITUATIE').value.trim();
+            const noteAN = document.getElementById('AN').value.trim();
+            const noteOBM = document.getElementById('OBM').value.trim();
+            const noteSPEECH = document.getElementById('SPEECH').value.trim();
+            const noteREGULAMENT = document.getElementById('REGULAMENT').value.trim();
+            const noteContent = document.getElementById('newNoteContent').value.trim();
+
+            if (noteCR || noteS || noteAN || noteOBM || noteSPEECH || noteREGULAMENT || noteContent) {
+                const note = document.createElement('div');
+                note.className = 'note';
+                note.innerHTML = `
+                    ${noteCR ? `<strong>CR:</strong> ${noteCR}<br>` : ''}
+                    ${noteS ? `<strong>SITUATIE:</strong> ${noteS}<br>` : ''}
+                    ${noteAN ? `<strong>AN:</strong> ${noteAN}<br>` : ''}
+                    ${noteOBM ? `<strong>OBM:</strong> ${noteOBM}<br>` : ''}
+                    ${noteSPEECH ? `<strong>SPEECH:</strong> ${noteSPEECH}<br>` : ''}
+                    ${noteREGULAMENT ? `<strong>Regulament:</strong> ${noteREGULAMENT}<br>` : ''}
+                    ${noteContent ? `<p>${noteContent}</p>` : ''}
+                `;
+                document.getElementById('notesContainer').appendChild(note);
+
+                document.querySelectorAll('.input-field').forEach(input => input.value = '');
+                closeCreateModal();
+            } else {
+                alert('Please fill in at least one field!');
+            }
+        }
+
+        function filterNotes() {
+            const filter = document.getElementById('searchInput').value.toLowerCase();
+            document.querySelectorAll('.note').forEach(note => {
+                note.style.display = note.innerText.toLowerCase().includes(filter) ? '' : 'none';
+            });
+        }
+
+        function pinNote() {
+            alert('Note pinned!');
+        }
+    </script>
+</body>
+</html>

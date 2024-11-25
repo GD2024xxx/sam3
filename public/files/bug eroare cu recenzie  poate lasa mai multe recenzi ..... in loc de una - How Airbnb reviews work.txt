@@ -1,0 +1,44 @@
+🔆 CR: How Airbnb reviews work
+🔆 Situație: bug eroare cu recenzie  poate lasa mai multe recenzi ..... in loc de una
+🔆 Departament: roz
+
+===========================
+::::::::::::::::::::::::::::::::::::: SEPEECH
+Ho verificato e sembra che ci sia un bug. Per questo motivo appare che Lei possa lasciare ancora una recensione. Ho contattato il dipartimento IT che risolverà la situazione entro 3-4 giorni.
+Va ma putem ajuta si cu altceva ? 
+papa solve
+
+
+====== AN si OBM e de vrajeal SPEECH conteazaa
+• IBM
+• The user asks How Airbnb reviews work
+• OBM
+• educated
+• IBM
+• H is satified
+• OBM
+• No further actions needed
+
+=========================
+
+Gentile Andrea,
+
+Mi chiamo Samir e sono un Ambasciatore di Supporto Airbnb. La ringraziamo per averci contattato. Se desidera ottenere ulteriori informazioni su come funzionano le recensioni e in quali situazioni una recensione può essere modificata o rimossa, le invitiamo a consultare gli articoli seguenti:
+
+Come funzionano le recensioni
+Airbnb.it/help/article/3127
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐 Airbnb.com/help/contact_us
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

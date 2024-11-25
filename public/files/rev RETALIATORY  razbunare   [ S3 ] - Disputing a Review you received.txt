@@ -1,0 +1,38 @@
+🔆 CR: Disputing a Review you received
+🔆 Situație: .rev RETALIATORY  razbunare   [ S3 ]
+🔆 Departament: maro
+
+===========================
+ • H IBM
+ • H asks to delete the received review
+ • Reason: does not reflect the reality, and the author left it out of revenge
+
++ INVESTIGATION:
+ • RC Case Existing -> H demands compensation for damages caused by G
+ • Message Thread -> G admits his mistake and threatens H to leave a negative review
+
++ R1 RESOLUTION:
+ • The review is Retaliatory -> not in line with Airbnb's Reviews Policy
+
++ ACTIONS:
+ • The review has been removed
+
+ • OBM
+ • Both parties were notified and educated
+
++ Macros applied to the Subject:
+Account:: Reviews:: Disputes:: Retaliatory review:: Review removed - Subject
+
++ Macros applied to the Author:
+Account:: Reviews:: Disputes:: EEA Retaliatory review:: Review removed - Author
+
+ • No further actions needed
+ • ==================================
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

@@ -1,0 +1,59 @@
+🔆 CR: How Airbnb reviews work
+🔆 Situație: userul cere sa mute recenziile de la un L la alt L sau de la un H la un alt H
+🔆 Departament: mov cu ppoza
+
+===========================
+CR: How Airbnb reviews work
+WF:
+How reviews work
+Review flow update
+=========================
+• IBM
+ • The user asks if he can move the reviews from one listing to another listing
+ • OBM
+ • Support Ambassador responded to User request and educated User with HC articles
+ • ============================
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della Comunità Airbnb. La ringraziamo per averci contattato per richiedere assistenza. Mi dispiace molto per questa situazione, poiché so quanto lavoro e dedizione sia necessario da parte di un Host per ottenere recensioni positive.
+
+In conformità con il regolamento Airbnb in merito alle recensioni, desideriamo informarLa che la recensione lasciata si riferisce esclusivamente a quell'annuncio specifico e all'Host che ha creato quell'annuncio. Purtroppo, non esiste la possibilità di spostare una recensione da un annuncio all'altro o da un Host a un altro.
+
+Nelle recensioni, gli ospiti esprimono la loro opinione personale sull'annuncio in questione (dove hanno effettivamente soggiornato) e sul reale proprietario dell'annuncio. Per questo motivo, non abbiamo la possibilità di fare ciò. Teoricamente parlando, se fosse possibile, quella recensione non sarebbe più autentica, poiché si riferirebbe a un'altra persona, un'altra posizione, un altro annuncio. Inoltre, se fosse possibile, gli ospiti non avrebbero più fiducia nella veridicità delle recensioni né negli Host.
+
+Per approfondire ulteriormente il funzionamento delle recensioni e per conoscere i "Termini delle recensioni di Airbnb", La preghiamo di consultare gentilmente gli articoli:
+
+Come funzionano le recensioni
+airbnb.it/help/article/3127
+
+Perché le recensioni sono importanti?
+airbnb.it/resources/hosting-homes/a/why-reviews-matter-41
+
+Termini delle recensioni di Airbnb
+airbnb.it/help/article/2673
+
+Vi preghiamo di comunicarci se ritenete che occorra ancora il nostro supporto.
+
+============ pt feedback==================== dupa ce a citit SEEN    OBM2
+È stato un piacere parlare con Lei. Sarebbe stato felice se ci fosse stata una possibilità, poiché capisco quanto sia importante per Lei.
+Tuttavia, dopo aver esaminato nuovamente attentamente "Termini delle recensioni di Airbnb", confermo quanto detto in precedenza. Se in futuro avesse altre domande o avesse bisogno del nostro supporto, la invitiamo a chiamarci. Siamo sempre lieti di poterLe offrire assistenza e supporto.
+
+============================================================ OBM 3 final
+
+Nel caso in cui non ci siano ulteriori questioni, chiuderemo questa conversazione. Le ricordo che siamo disponibili 24/7 per assistere Lei. Se avesse bisogno di qualcosa, la prego di non esitare a contattarci:
+
+📞 +39 0699366533
+🌐 www.airbnb.it/help
+
+
+Cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

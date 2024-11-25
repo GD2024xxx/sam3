@@ -1,0 +1,41 @@
+🔆 CR: How Airbnb reviews work
+🔆 Situație: punctaj de 5 stele la G dar application arata 0
+🔆 Departament: 
+
+===========================
++ H IBC
++ H sent documentation,
++ H says he gave 5 stars in all categories for G
+and ask why 0 stars appear instead of 5
+
+
+The overall rating could show as 0 or no stars if the Host submitted their review on desktop or Android devices. In the future, this might also be applied to iOS.
+Hosts are prompted to give a star rating for their guest but this won't appear on the guest's profile
+Please educate H that there is no error
+https://confluence.airbnb.biz/display/LEN/How+reviews+work#expand-NovaCaseonlyuseifyouvecompletedtheAtriumtrainingandhavebeenonboardedtoNovaCase
+Today at 10:37 PM GMT+3 by Andreea D.
+
+
++ OBM
+  • H was educated and received an answer
+  • No further actions needed
+==========================
+
+
+Airbnb Support 11:11 PM GMT+3 by Samir S.
+Vi confermiamo che avete assegnato un punteggio di 5 stelle per tutte le categorie al vostro ospite. Purtroppo, le informazioni nell'immagine non sono ancora aggiornate. Nel caso in cui lasciate la recensione o il punteggio da un laptop o da un dispositivo Android e successivamente accediate alla piattaforma da un altro tipo di dispositivo, le informazioni richiedono del tempo per sincronizzarsi (a volte anche alcuni giorni).
+
+Vi confermiamo ancora una volta che avete lasciato il punteggio massimo e vi auguriamo una piacevole serata. Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐 Airbnb.com/help/contact_us
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

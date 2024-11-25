@@ -1,0 +1,45 @@
+🔆 CR: Disputing a review you received
+🔆 Situație: alta persoana cere stergerea unei recenzii   (apel de pe un allt account)       .rev
+🔆 Departament: 
+
+===========================
+CE.mg   +   R1.mg   +   R2.mg             [.CE] [dCE] [dCE.mg]
+
++ User IBC
++ Subject contacts on behalf of the author of the review
++ The reservation is not on the User's Account
++ The user was informed that the request should come from the author directly
++ Macro applied
+Account:: Reviews:: Disputes:: Author removal request:: Subject contacting on behalf of the author
+  • No further actions needed
+
+Workflow: Review dispute:
+https://confluence.airbnb.biz/display/LEN/Review+dispute#
+ • ========================
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene. La ringrazio per averci contattato.
+
+La privacy dei membri della nostra community è molto importante per noi. Per questo chiediamo a chi ha scritto la recensione di contattarci direttamente, qualora desideri richiederne la rimozione.
+
+Per saperne di più, visiti questa pagina del nostro Centro Assistenza:
+
+Termini delle recensioni di Airbnb
+airbnb.it/help/article/548
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐  Airbnb.com/help/contact_us
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

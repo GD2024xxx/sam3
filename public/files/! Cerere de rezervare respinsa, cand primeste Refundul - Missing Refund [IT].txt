@@ -1,0 +1,68 @@
+🔆 CR: Missing Refund
+🔆 Situație: Cerere de rezervare respinsa, cand primeste Refundul?
+🔆 Departament: CE, R1, R2
+
+===========================
++ G IBC
+• G reports that he did not receive a Refund
+
++ INVESTIGATION:
+• Reservation Status: Denied
+• Reservation Details: Full Refund
+
+• OBM
+• Informed that a Full Refund has been processed
+• Notified regarding the Transaction Processing Time
+• Advised to contact his Bank for more details
+• Educated with relevant HC articles
+• H understood
+• No further actions needed
+• Solved
+======================
+
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene.
+
+La ringraziamo per averci contattato riguardo alla richiesta di prenotazione __________ con __________. Le confermiamo che il nostro sistema ha effettuato un rimborso completo, poiché questa richiesta non è stata accettata. I fondi si trovano attualmente sul Suo conto bancario. Nel caso in cui non siano ancora visibili, Le consigliamo di contattare la Sua banca per scoprire quali sono i tempi di elaborazione del rimborso. Qualora Le fosse utile, Le raccomandiamo alcuni articoli che forniscono informazioni supplementari su questo argomento:
+
+Quando riceverò il mio rimborso?
+Airbnb.it/help/article/1967
+
+Cosa succede se la tua richiesta di prenotazione viene rifiutata o scade
+Airbnb.it/help/article/315
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐 Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo alla chiusura di questa conversazione.
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::
+When you’ll get your refund
+https://www.airbnb.com/help/article/1967?locale=en
+
+Missing refund
+https://confluence.airbnb.biz/display/LEN/Missing+refund
+
+
+
+explciatii de la ANGEL:
+nu, se aplica cand apesi pe Listed ptr prima oara
+cand schimbi statusul in listed dupa ce il creezi. Dupa daca schimbi in unlisted si in listed nu se asteapta.
+ca se trece printr un proces de verificare cand il publici ptr prima oara. Ulterior daca schimbi statusul nu se mai reia procesul asta
+
+cand este vizibil pe platforma H ul primeste un mail cu confirmarea ca your listing is Live now (sau ceva de genul).
+De pe 16 oct si pana azi, nu a primit nimic

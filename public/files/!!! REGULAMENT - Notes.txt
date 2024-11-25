@@ -1,0 +1,25 @@
+🔆 CR: Notes
+🔆 Situație: !!! REGULAMENT
+🔆 Departament: 
+
+===========================
+.HIW / .mg => Informatii Generale, cum functioneaza (mesaj general imdpp) - fundal rosu
+
+H cere detalii despre .FACTURI - Requesting an Itinerary or Receipt .mg
+
+H asks about .invoices .FACTURI - Requesting an Itinerary or Receipt .mg
+
+Titlu = Situatie + Contact Reason + Tipul situatiei ( .mg adica imdpp)
+
+
+Titlu = Tipul situatiei ( .mg adica imdpp) + Situatie + Contact Reason
+
+H asks about .invoices .FACTURI .mg Requesting an Itinerary or Receipt
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

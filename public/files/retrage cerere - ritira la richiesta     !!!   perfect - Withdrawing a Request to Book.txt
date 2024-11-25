@@ -1,0 +1,61 @@
+🔆 CR: Withdrawing a Request to Book
+🔆 Situație: retrage cerere - ritira la richiesta     !!!   perfect
+🔆 Departament: CE
+
+===========================
+retrage cerere - ritira la richiesta     !!!   perfect
+CR: Withdrawing a Request to Book 
+=============================
++ G IBC
++ G asks how to cancel a reservation request
++ Support Ambassador responded to G request
++ Support Ambassador asked G if they still need assistance
++ G answered no
++ Support Ambassador informed the G that we will close this ticket
++ H satisfied
+
++ OBM
++ Support Ambassador educated G with HC articles
++ Macro applied:
+Retracting a HIW request
+
++ Workflow used:
+https://confluence.airbnb.biz/display/LEN/Retracted+reservation+request
+
++ G satisfied
++ No further actions needed
+
+==============================
+Gentile __________,
+
+Mi chiamo Samir e sono un Ambasciatore di Supporto Airbnb, abbiamo avuto una conversazione telefonica in precedenza.
+
+Quando parliamo di una 'richiesta di prenotazione', questa può sempre essere annullata senza alcuna penalità, pertanto, se desidera annullarla, riceverà un rimborso completo. Per farlo, segua i passaggi di seguito:
+1. Vai su Viaggi
+2. Ritira la richiesta
+
+Per cancellare una richiesta di prenotazione prima che l'host l'accetti, vada su Viaggi > Cancella richiesta.
+
+Per cancellare una richiesta non sono previste penali. Quando richiede una prenotazione, sul suo metodo di pagamento viene autorizzata temporaneamente una richiesta di addebito, la quale si annulla automaticamente al momento della cancellazione della richiesta di prenotazione.
+
+Per saperne di più su come cancellare una richiesta di prenotazione, consulti il nostro Centro Assistenza:
+
+Cancella o ritira una richiesta di viaggio:
+www.airbnb.com/help/question/90
+
+Avendo ricevuto conferma telefonica da parte Vostra che tutto è a posto e che non posso fornire ulteriori assistenze, procederemo alla chiusura di questo ticket.
+
+Per qualsiasi esigenza, non esitate a contattarci all'indirizzo: www.airbnb.com/help.
+
+Desidero sottolineare che è stato un piacere potervi assistere. Vi auguro una piacevole giornata!
+
+Cordiali saluti,
+Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

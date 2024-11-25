@@ -1,0 +1,58 @@
+🔆 CR: Pests in Listing
+🔆 Situație: H .smecher zice ca G cere .FR si el accepta
+🔆 Departament: CE / R1 => transfer R2
+
+===========================
+H .smecher zice ca G cere .FR si el accepta
+poate fi orice CR: Helping a guest with a cancellation
+schimbat pt escalare: Pests in Listing
+
+• ========================
+• H IBC
+• H asks us to cancel the reservation and offer a full refund to G
+
++ INVESTIGATION:
++ Message Thread reveals that:
+G is complaining about missing amenities and pests in the Listing
+• Transferred to R2
+==========================
+
+
+
+
+
+Gentile __________,
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Grazie per aver contattato Airbnb!
+La preghiamo di scriverci il codice della prenotazione a cui si riferisce.
+
+
+
+==============================
+Ci scusiamo per il ritardo, al momento stiamo registrando un numero elevato di richieste.
+
+Riguardo alla prenotazione __________, l'ospite __________ ha richiesto a Lei un rimborso completo e Lei lo ha accettato? Abbiamo capito correttamente?
+
+==============================
+In conformità con il regolamento, prima di prendere una decisione, ci viene richiesto di comprendere la causa che ha portato a questo risultato.
+Perché l'ospite desidera annullare la prenotazione? Le ha fornito un motivo specifico o ulteriori dettagli?
+
+==============================
+==============================
+
+
+
+========== contactez G
+Dear __________,
+
+My name is Samir, and I am part of the Airbnb Community. I am reaching out regarding reservation __________ with __________ .
+
+Your host informed us that you would like to cancel and receive a full refund. Could you please provide us with more details about what happened?
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

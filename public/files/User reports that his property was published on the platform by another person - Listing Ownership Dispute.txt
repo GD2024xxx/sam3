@@ -1,0 +1,83 @@
+🔆 CR: Listing Ownership Dispute
+🔆 Situație: User reports that his property was published on the platform by another person
+🔆 Departament: CE, R1, R2 => RR
+
+===========================
+• User IBM
+• User reports that his property was published on the platform by another person with his consent
+• User requests to take possession of the Listing
+
+• OBC, no response
+• OBM
+• Informed that a Listing cannot be transferred from one person to another
+• Advised to contact the Listing Owner to Deactivate the Listing in question
+
++ IBM
+• The listing owner didn't delete the listign at owner request
+
+• User contacts us about a Listing Ownership Dispute
++ OBM
+• Support Ambassador requested the necessary information to transfer to the RR Department
+
+• Promises made: None
+
+• WF used:   Listing ownership dispute
+https://confluence.airbnb.biz/display/LEN/Listing+ownership+dispute
+=====================
+
+Gentile __________,
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene. Abbiamo provato a chiamarLa, ma non siamo riusciti a metterci in contatto con Lei.
+
+
+Da quanto comprendiamo, il Suo immobile è stato pubblicato da un'altra persona con il Suo consenso. Ha preso contatto con quella persona?
+
+Un annuncio non può cambiare proprietario. Può essere solo eliminato.
+
+Successivamente, Lei può creare un nuovo annuncio per il Suo immobile.
+
+
+==============================
+Un dipartimento specializzato indagherà su questa situazione per offrirLe tutta l'assistenza di cui ha bisogno. La preghiamo di comunicarci le seguenti informazioni:
+• Il Suo nome completo
+• Il Suo indirizzo email
+• Link all'annuncio in questione
+• Reclamo/accusa specifica
+
+
+
+=================
+Informazioni: Anna Paola Sara Elisa Goffredo - anna_goffredo@fastwebnet.it - https://www.airbnb.it/rooms/583844323316162179?source_impression_id=p3_1730045701_P3TwAEX4VETVTnlf - Barbarhouse non più ha la delega per la gestione della Villa, ma non hanno ancora rimosso l'annuncio - Dichiarazione Portale BDSR
+CIR: 075064C200061851 (Puglia)
+CIN: IT075064C200061851
+Stato del CIN: Verificato
+Denominazione struttura: Villa Nunzia
+Codice fiscale dichiarante: GFFNPL64H66I549H Codice istat regione: 16 Codice istat provincia: 075 Codice istat comune: 064 Codice istat categoria: C2
+
+Prego verificare e procedere alla rimozione.
+Grazie.
+Anna Paola Goffredo
+=============================
+
+
+• IBM User with the required data
+• Transfer to RR to continue assistance
+
+Gentile __________,
+
+
+Grazie per averci contattato. Sto inoltrando il suo caso a un membro del nostro team meglio qualificato per risolvere il problema. 
+
+Comprendiamo che questo potrebbe averle causato qualche inconveniente e le siamo grati per la pazienza.
+
+
+Cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

@@ -1,0 +1,50 @@
+🔆 CR: Early or Late Check-in or Checkout
+🔆 Situație: ! H cere Late Check-in Fee
+🔆 Departament: R1, R2 (background rosu)
+
+===========================
++ H IBM
+• H asks if he can charge the G a Late Check-in Fee
+
++ INVESTIGATION:
+• SNAPSHOT > house_rules > Mentioned Fee: YES
+
++ OBM
+• H was informed that G had this information before booking and that he can ask for this Fee
+
++ OBC
+• G confirmed that it was resolved
+• G is satisfied
+ 
++ OBM
+• Educated with relevant HC articles
+• No further actions needed
+• Solved
+==============================
+
+
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene.
+
+Riguardo alla prenotazione __________ con __________, abbiamo verificato e risulta che addebitate una tassa extra per ritardi di oltre 2 ore. Sì, avete il diritto di richiederla, poiché l'ospite aveva questa informazione prima di prenotare.
+
+==========================
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐 Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo alla chiusura di questa conversazione.
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

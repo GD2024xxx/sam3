@@ -1,0 +1,96 @@
+🔆 CR: Disputing a Review you received
+🔆 Situație: .rev RETALIATORY  razbunare
+🔆 Departament: 
+maro
+===========================
+ • H IBM
+ • H asks to delete the received review
+ • Reason: does not reflect the reality, and the author left it out of revenge
+
+ • INVESTIGATION:
+ • H opened the Resolution Center Case
+ • Reason: __________ Damage, missing item, or unexpected cleaning
+ • Created at: __________
+
+ • In MT it is observed that the relationship between the 2 parties has deteriorated
+
+ • Subsequently the deputy review was written
+ • Review created at: __________
+
+ • R2 RESOLUTION (Conclusion)
+ • The review is not in line with Airbnb's Reviews Policy
+ • Reason: is retaliatory __________
+
+ • ACTIONS
+ • The review has been removed
+
+ • OBM
+ • Both parties were notified and educated
+
++ Macros applied to the Subject:
+Account:: Reviews:: Disputes:: Retaliatory review:: Review removed - Subject
+
++ Macros applied to the Author:
+Account:: Reviews:: Disputes:: EEA Retaliatory review:: Review removed - Author
+
+ • No further actions needed
+ • ==================================
+
+::::::::::::::::::::::::::::  ntro + educare
+Gentile __________,
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. La ringraziamo per averci contattato in merito alla prenotazione __________ con __________.
+
+Ci dispiace sapere che la recensione lasciata dall'ospite Le stia causando disagio. Inizieremo immediatamente ad analizzare il contenuto della recensione e la situazione in cui è stata scritta, in conformità con i termini di Airbnb relative alle recensioni. Nel frattempo, se desidera, può leggere anche Lei i termini e le condizioni applicabili all'analisi delle recensioni:
+
+Termini delle recensioni di Airbnb
+Airbnb.it/help/article/2673
+
+Norme sui contenuti di Airbnb
+Airbnb.it/help/article/546
+
+
+
+==================   OBM cu MACRO  la H   reclamant
+In seguito all'investigazione intrapresa, abbiamo stabilito che questa recensione viola i Termini delle recensioni di Airbnb. Di conseguenza, la recensione è stata rimossa.
+
+Chiediamo agli utenti di non lasciare recensioni tendenziose come forma di ritorsione nei confronti di un'altra persona. Consideriamo una recensione ritorsiva quando, ad esempio, un utente viola le nostre politiche per gli host o gli ospiti e, dopo aver ricevuto una notifica in merito, lascia una recensione negativa.
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐  Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo alla chiusura di questa conversazione.
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+==================   OBM cu MACRO  la AUTHOR {G}      papa
+
+Hi __________,
+
+
+I'm Samir, from Airbnb Community Support. Based on our investigation, we've determined the review you wrote for __________ does not follow our Reviews Policy and we've removed it.
+
+When we review content to determine whether there is a breach of our policies, we use a combination of automated and manual processes and consider various sources of information, including the content itself, account information, information provided through reporting mechanisms (where applicable) and any patterns of user activities. Under our policy, users may not write biased reviews as a form of retaliation against another user.
+We understand how important a trustworthy, reliable review system is, that’s why our Reviews Policy is designed to help ensure that Hosts and guests provide reviews that are authentic, trustworthy, and useful to our community.
+
+If you have further questions, you can find more information about our Reviews Policy in our Help Center at:
+airbnb.com/help/article/2673.
+
+You can also learn more about other redress rights available to EU users in our Help Center article https://www.airbnb.com/help/article/3508.
+Airbnb.com/help/contact_us
+
+
+Best regards,
+Airbnb Support
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

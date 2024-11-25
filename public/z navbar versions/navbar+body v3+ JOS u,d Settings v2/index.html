@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App x</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #181818;
+            color: #ddd;
+            padding: 20px;
+        }
+
+        .header, .note {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .input-field, .search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #333;
+            color: #ddd;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .note {
+            background-color: #3a3a3a;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .note button {
+            background-color: #dc3545;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .note button:hover {
+            background-color: #c82333;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Note App x</h1>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Cauta notes..." onkeyup="filterNotes()">
+    <input type="text" id="newNoteContent" class="input-field" placeholder="Scrie o notă..." />
+    <button class="button" onclick="saveNote()">Save</button>
+
+    <div id="notesContainer"></div>
+
+    <script>
+        const apiUrl = 'http://localhost:3000/notes';
+
+        async function fetchNotes() {
+            const response = await fetch(apiUrl);
+            const notes = await response.json();
+            displayNotes(notes);
+        }
+
+        async function saveNote() {
+            const content = document.getElementById('newNoteContent').value;
+            if (content.trim() === '') return alert('Introdu un text!');
+
+            await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content }),
+            });
+
+            document.getElementById('newNoteContent').value = '';
+            fetchNotes();
+        }
+
+        async function deleteNote(id) {
+            await fetch(`${apiUrl}/${id}`, { method: 'DELETE' });
+            fetchNotes();
+        }
+
+        function displayNotes(notes) {
+            const container = document.getElementById('notesContainer');
+            container.innerHTML = '';
+            notes.forEach(note => {
+                const div = document.createElement('div');
+                div.className = 'note';
+                div.innerHTML = `
+                    <p>${note.content}</p>
+                    <button onclick="deleteNote(${note.id})">🗑️ Delete</button>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function filterNotes() {
+            const filter = document.getElementById('searchInput').value.toLowerCase();
+            document.querySelectorAll('.note').forEach(note => {
+                note.style.display = note.innerText.toLowerCase().includes(filter) ? '' : 'none';
+            });
+        }
+
+        fetchNotes();
+    </script>
+        <script src="navbar.js"></script>
+        <script src="settingsModal.js"></script>
+
+
+
+</body>
+</html>

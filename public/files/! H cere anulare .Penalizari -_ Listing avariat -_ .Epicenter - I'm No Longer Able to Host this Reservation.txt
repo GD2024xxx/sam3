@@ -1,0 +1,52 @@
+🔆 CR: I'm No Longer Able to Host this Reservation
+🔆 Situație: ! H cere anulare .Penalizari -> Listing avariat -> .Epicenter
+🔆 Departament: R1
+
+===========================
+• H IBC
+• H requested cancellation of Penalties
+• Reason: Bad weather caused damage that affected the Listing
+
++ H IBM has sent documentation for Penalties removal
+• Documentation is: Valid but incomplete
+
++ OBC, no response
++ OBM
+• Informed to send us the following also:
+-- A timeline of events and actions taken to date to correct the issue
+-- Estimated timeline that property will be impacted
+-- To block the Calendar for the impacted period
+
++ WF used:
+-- Host cancellation - No longer able to Host
+https://confluence.airbnb.biz/display/LEN/Host+cancellation+-+No+longer+able+to+Host
+
+-- Major Disruptive Events (MDE) Epicenter
+https://confluence.airbnb.biz/display/LEN/MDE
+================================= OBM ceri documentatie
+Gentile __________,
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Mi dispiace sapere che sta riscontrando dei disagi. Siamo al Suo fianco e desideriamo aiutarLa nel miglior modo possibile.
+
+Secondo il regolamento, il primo passo in questa situazione è fornirci la documentazione necessaria per poter comprendere meglio le circostanze. Potrebbe inviarci la documentazione qui, per favore?
+
+
+================ a trimis doar poza cu zidurile ude::::: doc incompleta
+La ringraziamo per la Sua risposta!
+
+Abbiamo esaminato la documentazione inviata, che è valida, ma purtroppo incompleta. Per poter annullare le conseguenze, avremmo bisogno di:
+• Una cronologia dettagliata degli eventi e delle azioni intraprese fino ad oggi per risolvere il problema
+• Una stima del periodo durante il quale la Sua proprietà sarà coinvolta
+• Le saremmo grati se potesse bloccare il calendario per il periodo in cui prevede di non poter accettare prenotazioni.
+
+=================================
+È necessario che ci scriva qui un messaggio in cui ci comunichi quali azioni ha preso per risolvere la situazione, entro quanto tempo pensa che si risolverà, specificando una data, un giorno preciso in cui stima di poter ricominciare a ricevere prenotazioni.
+
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

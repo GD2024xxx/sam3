@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212121;  /* Nuanță de gri închis */
+            color: #000000; /* Negru aprins pentru text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #b5e2a8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .input-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+
+        .notes-list {
+            margin-top: 20px;
+        }
+
+        .note {
+            background-color: #fff1c4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex; /* Alinierea pe aceeași linie */
+            margin-bottom: 15px; /* Spațiu între fiecare grup de etichetă și input */
+            align-items: center; /* Aliniază vertical inputul și eticheta */
+        }
+
+        label {
+            width: 100px; /* Lățimea fixă a etichetei pentru aliniere */
+            margin-right: 10px; /* Spațiu între etichetă și input */
+        }
+
+        .input-larg {
+            flex: 1; /* Inputul va ocupa restul lățimii disponibile */
+            padding: 10px; /* Spațiu interior pentru input */
+            box-sizing: border-box; /* Include padding în lățimea totală */
+        }
+
+        #saveBtn {
+            display: block; /* Face ca butonul să se comporte ca un bloc */
+            margin: 20px auto; /* Centrează butonul orizontal */
+            padding: 10px 20px; /* Spațiu interior pentru confort */
+            font-size: 16px; /* Mărimea textului */
+            color: #ffffff; /* Culoarea textului */
+            background-color: #4CAF50; /* Verde pentru fundal */
+            border: none; /* Elimină bordura */
+            border-radius: 5px; /* Colțuri rotunjite */
+            cursor: pointer; /* Pointer la hover */
+            transition: background-color 0.3s; /* Tranziție pentru efectul de hover */
+        }
+
+        #saveBtn:hover {
+            background-color: #45a049; /* Culoare mai închisă la hover */
+        }
+
+        /* Stil pentru butoanele de limbă */
+        .language-buttons {
+            display: flex; /* Flexbox pentru aranjarea butoanelor pe orizontală */
+            justify-content: center; /* Centrează butoanele pe orizontală */
+            margin-bottom: 15px; /* Spațiu sub butoane */
+        }
+
+        .language-button {
+            background-color: #444; /* Fundal închis pentru butoane */
+            color: #ffffff; /* Text alb */
+            border: none;
+            border-radius: 10px; /* Colțuri rotunjite */
+            padding: 9px 18px; /* Spațiu interior mărit pentru a mări butoanele */
+            font-size: 18px; /* Dimensiune text mărită */
+            cursor: pointer; /* Cursor pointer */
+            margin: 10px; /* Spațiu între butoane */
+            position: relative; /* Pentru animații */
+            overflow: hidden; /* Ascunde overflow */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Animații */
+            width: calc(50% - 20px); /* Lățime pe jumătate */
+        }
+
+        .language-button:hover {
+            background-color: #007bff; /* Culoare mai deschisă la hover */
+        }
+
+        .language-button.active {
+            background-color: #444; /* Fundal constant pentru butonul activ */
+        }
+
+        .language-button.en-active {
+            color: #007bff; /* Text albastru pentru butonul EN activ */
+            font-weight: bold; /* Text îngroșat */
+        }
+
+        .language-button.it-active {
+            color: #32cd32; /* Text verde pentru butonul IT activ */
+            font-weight: bold; /* Text îngroșat */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Notite</h2>
+
+        <div class="form-group">
+            <label>🔆 Limbă:</label>
+            <div class="language-buttons">
+                <button class="language-button active it-active" data-lang="IT" onclick="toggleLanguage('IT')">IT</button>
+                <button class="language-button" data-lang="EN" onclick="toggleLanguage('EN')">EN</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>🔆 Dep.:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="dep" value="CE"> CE</label>
+                <label><input type="radio" name="dep" value="R1" checked> R1</label>
+                <label><input type="radio" name="dep" value="R2"> R2</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="cr">🔆 CR:</label>
+            <input type="text" id="cr" class="input-larg" placeholder="🔆 Contact Reason (CR):">
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="situatie" class="input-larg" placeholder="🔆 Situatie:">
+        </div>
+
+        <div class="form-group">
+            <label for="departament">🔆</label>
+            <input type="text" id="departament" class="input-larg" placeholder="🔆 Departament:">
+        </div>
+
+        <div class="form-group">
+            <label for="anObm">🔆 AN + OBM / OBE:</label>
+            <input type="text" id="anObm" class="input-larg" placeholder="🔆 AN + OBM / OBE:">
+        </div>
+
+        <div class="form-group">
+            <label for="speech">🔆 SPEECH:</label>
+            <input type="text" id="speech" class="input-larg" placeholder="🔆 SPEECH:">
+        </div>
+
+        <div class="form-group">
+            <label for="regulament">🔆 REGULAMENT:</label>
+            <input type="text" id="regulament" class="input-larg" placeholder="🔆 Regulament:">
+        </div>
+
+        <button id="saveBtn">Save</button>
+        <div id="notesList" class="notes-list"></div>
+    </div>
+
+    <script>
+        function toggleLanguage(selectedLang) {
+            const buttons = document.querySelectorAll('.language-button');
+            buttons.forEach(button => {
+                if (button.getAttribute('data-lang') === selectedLang) {
+                    button.classList.add('active');
+                    if (selectedLang === 'EN') {
+                        button.classList.add('en-active'); // Aplică stilul pentru EN
+                        button.classList.remove('it-active'); // Înlătură stilul pentru IT
+                    } else {
+                        button.classList.add('it-active'); // Aplică stilul pentru IT
+                        button.classList.remove('en-active'); // Înlătură stilul pentru EN
+                    }
+                } else {
+                    button.classList.remove('active');
+                    button.classList.remove('en-active'); // Înlătură stilul pentru butonul neactiv EN
+                    button.classList.remove('it-active'); // Înlătură stilul pentru butonul neactiv IT
+                }
+            });
+        }
+
+        document.getElementById("saveBtn").addEventListener("click", salveazaDatele);
+
+        async function salveazaDatele() {
+            // Preia valorile din câmpurile de input
+            const cr = document.getElementById("cr").value;
+            const situatie = document.getElementById("situatie").value;
+            const departament = document.getElementById("departament").value;
+            const anObm = document.getElementById("anObm").value;
+            const speech = document.getElementById("speech").value;
+            const regulament = document.getElementById("regulament").value;
+
+            // Afișează notițele
+            const noteDiv = document.createElement("div");
+            noteDiv.classList.add("note");
+            noteDiv.innerHTML = `<strong>CR:</strong> ${cr} <br><strong>S:</strong> ${situatie} <br><strong>D:</strong> ${departament} <br><strong>AN + OBM:</strong> ${anObm} <br><strong>SPEECH:</strong> ${speech} <br><strong>REGULAMENT:</strong> ${regulament}`;
+            document.getElementById("notesList").appendChild(noteDiv);
+
+            // Resetează câmpurile de input
+            document.getElementById("cr").value = '';
+            document.getElementById("situatie").value = '';
+            document.getElementById("departament").value = '';
+            document.getElementById("anObm").value = '';
+            document.getElementById("speech").value = '';
+            document.getElementById("regulament").value = '';
+        }
+    </script>
+</body>
+</html>

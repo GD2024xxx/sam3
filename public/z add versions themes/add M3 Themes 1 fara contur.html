@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add K33P Note</title>
+    <style>
+        /* Stil general pentru pagina */
+        body {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Bara de navigare rămâne neschimbată */
+        #navbar {
+            background-color: #1f1f1f;
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .nav-buttons button {
+            background-color: #3a3a3a;
+            color: #e0e0e0;
+            padding: 8px 15px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #4b4b4b;
+        }
+
+        #logout-btn {
+            background-color: #1f1f1f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 2px 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 15px;
+        }
+
+        #logout-btn:hover {
+            background-color: #d9534f;
+        }
+
+        #frame {
+            width: 80%;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            margin: 30px auto;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .input-larg, .textarea-larg {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 15px;
+            outline: none;
+        }
+
+
+
+        .textarea-larg {
+            height: 50px;
+            resize: YES;
+        }
+
+        /* Container pentru butoane CE, R1, R2, Save, IT, EN */
+        .button-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        /* Butoane stânga (CE, R1, R2) */
+        .left-buttons {
+            display: flex;
+            gap: 0; /* Fără spațiu între butoane */
+        }
+
+        .left-buttons button {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0; /* Butoanele vor fi lipite */
+        }
+
+        .left-buttons button:hover {
+            background-color: #28a745; /* Verde la hover */
+        }
+
+        .left-buttons button.active {
+            background-color: #218838; /* Verde selectat */
+        }
+
+        /* Buton Save centrat */
+        .center-button {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .save-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .save-button:hover {
+            background-color: #218838;
+        }
+
+        /* Butoane dreapta (IT, EN) */
+        .right-buttons {
+            display: flex;
+            gap: 0px;
+        }
+
+        .right-buttons button {
+            background-color: #3a3a3a;
+            color: #e0e0e0;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .right-buttons button:hover {
+            background-color: #218838;
+        }
+
+        .right-buttons button.active {
+            background-color: #218838; /* Verde selectat */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bara de navigare originală -->
+<div id="navbar">
+    <div class="nav-buttons">
+        <button onclick="navigateTo('home')">Home</button>
+        <button onclick="navigateTo('add')">Add</button>
+        <button onclick="navigateTo('all_texts')">All Texts</button>
+        <button onclick="navigateTo('settings')">Settings</button>
+    </div>
+    <button id="logout-btn" onclick="logout()">LogOut</button>
+</div>
+
+<!-- Frame principal -->
+<div id="frame">
+    <input type="text" id="cr" class="input-larg" placeholder="🔆 Contact Reason (CR):">
+    <input type="text" id="situatie" class="input-larg" placeholder="🔆 Situație:">
+    <textarea id="anObm" class="textarea-larg" placeholder="🔆 AN + OBM / OBE:"></textarea>
+    <input type="text" id="speech" class="input-larg" placeholder="🔆 SPEECH:">
+    <input type="text" id="regulament" class="input-larg" placeholder="🔆 Regulament: (WF + HC)">
+
+    <!-- Container pentru butoane -->
+    <div class="button-row">
+        
+        <div class="left-buttons">
+            <button id="buttonCE" onclick="selectLeftButton('CE')">CE</button>
+            <button id="buttonR1" class="active" onclick="selectLeftButton('R1')">R1</button>
+            <button id="buttonR2" onclick="selectLeftButton('R2')">R2</button>
+        </div>
+
+        <div class="center-button">
+            <button class="save-button" onclick="salveazaDatele()">Save</button>
+        </div>
+
+        <div class="right-buttons">
+            <button id="buttonIT" class="active" onclick="schimbaLimba('IT'); selectRightButton('IT');">IT</button>
+            <button id="buttonEN" onclick="schimbaLimba('EN'); selectRightButton('EN');">EN</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function logout() {
+        window.location.href = 'login.html';
+    }
+
+    function navigateTo(page) {
+        const pages = {
+            home: 'index.html',
+            add: 'add.html',
+            all_texts: 'all_texts.html',
+            settings: 'settings.html'
+        };
+        window.location.href = pages[page] || 'index.html';
+    }
+
+    function schimbaLimba(limba) {
+        alert(`Limbă schimbată în: ${limba}`);
+    }
+
+    function salveazaDatele() {
+        alert("Date salvate cu succes!");
+    }
+
+    function selectLeftButton(button) {
+        // Dezactivează toate butoanele
+        document.querySelectorAll('.left-buttons button').forEach(b => b.classList.remove('active'));
+        
+        // Activează butonul selectat
+        document.getElementById('button' + button).classList.add('active');
+    }
+
+    function selectRightButton(button) {
+        // Dezactivează toate butoanele
+        document.querySelectorAll('.right-buttons button').forEach(b => b.classList.remove('active'));
+        
+        // Activează butonul selectat
+        document.getElementById('button' + button).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

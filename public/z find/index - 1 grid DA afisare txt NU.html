@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K33P > Find</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            border: 2px solid #34ba0f;
+            border-radius: 5px;
+        }
+
+        .file-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* List View */
+        .file-list-li {
+            background-color: #1e1a1a;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .file-list-li:hover {
+            background-color: #a21010;  
+        }
+
+        /* Grid View */
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .file-grid-item {
+            background-color: #1e1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            color: white;
+            cursor: pointer;
+            height: auto;
+            max-height: 250px; /* Optional: limit maximum height for grid items */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .file-grid-item:hover {
+            background-color: #a21010;  
+        }
+
+        .file-grid-item-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .file-grid-item-content {
+            font-size: 14px;
+            max-height: 80px; /* Limitează la 5 rânduri */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .no-results {
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+
+        .loading {
+            font-style: italic;
+            color: #888888;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: rgb(12, 192, 39);
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Modal pentru afișarea conținutului fișierului */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: black;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Find Notes</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Enter note name..." oninput="debouncedSearch()">
+    </div>
+
+    <button onclick="toggleView()">Switch View</button>
+
+    <ul id="fileList" class="file-list"></ul>
+    <div id="gridView" class="file-grid" style="display: none;"></div>
+
+    <div id="loading" class="loading" style="display: none;">Searching...</div>
+
+    <!-- Modal pentru afișarea conținutului fișierului -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let debounceTimer;
+        let isGridView = false;
+
+        function debouncedSearch() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(searchFiles, 300);
+        }
+
+        // Funcția pentru căutarea fișierelor
+        function searchFiles() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const fileList = document.getElementById('fileList');
+            const gridView = document.getElementById('gridView');
+            const loading = document.getElementById('loading');
+
+            fileList.innerHTML = "";
+            gridView.innerHTML = "";
+            loading.style.display = 'block';
+
+            // Cerere către server pentru a obține lista de fișiere
+            fetch('/files')
+                .then(response => response.json())
+                .then(files => {
+                    loading.style.display = 'none';
+
+                    const filteredFiles = files.filter(file => file.toLowerCase().includes(query));
+
+                    if (filteredFiles.length > 0) {
+                        filteredFiles.forEach(file => {
+                            const li = document.createElement('li');
+                            li.textContent = file;
+                            li.classList.add('file-list-li');
+                            li.onclick = () => openModal(file);
+                            if (isGridView) {
+                                const div = document.createElement('div');
+                                div.classList.add('file-grid-item');
+
+                                const title = document.createElement('div');
+                                title.classList.add('file-grid-item-title');
+                                title.textContent = file;
+
+                                const content = document.createElement('div');
+                                content.classList.add('file-grid-item-content');
+
+                                // Obține primele 5 rânduri din fișier
+                                fetch(`/file-content?name=${encodeURIComponent(file)}`)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        const contentText = data.content.split('\n').slice(0, 5).join('\n');
+                                        content.textContent = contentText;
+                                    });
+
+                                div.appendChild(title);
+                                div.appendChild(content);
+                                div.onclick = () => openModal(file);
+                                gridView.appendChild(div);
+                            } else {
+                                fileList.appendChild(li);
+                            }
+                        });
+                    } else {
+                        const noResults = document.createElement('li');
+                        noResults.classList.add('no-results');
+                        noResults.textContent = 'No files found';
+                        if (isGridView) {
+                            gridView.appendChild(noResults);
+                        } else {
+                            fileList.appendChild(noResults);
+                        }
+                    }
+                })
+                .catch(error => {
+                    loading.style.display = 'none';
+                    console.error("Error fetching files:", error);
+                });
+        }
+
+        // Deschide modalul și încarcă conținutul fișierului
+        function openModal(fileName) {
+            const modal = document.getElementById('myModal');
+            const modalContent = document.getElementById('modalContent');
+
+            fetch(`/file-content?name=${encodeURIComponent(fileName)}`)
+                .then(response => response.json())
+                .then(data => {
+                    modalContent.textContent = data.content;
+                    modal.style.display = 'block';
+                })
+                .catch(error => {
+                    modalContent.textContent = 'Error loading file content.';
+                    modal.style.display = 'block';
+                });
+        }
+
+        // Închide modalul
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Comută între vizualizarea grid și listă
+        function toggleView() {
+            isGridView = !isGridView;
+            document.getElementById('fileList').style.display = isGridView ? 'none' : 'block';
+            document.getElementById('gridView').style.display = isGridView ? 'grid' : 'none';
+            searchFiles();
+        }
+    </script>
+</body>
+</html>

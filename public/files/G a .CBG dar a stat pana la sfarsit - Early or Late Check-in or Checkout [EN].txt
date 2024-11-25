@@ -1,0 +1,160 @@
+🔆 CR: Early or Late Check-in or Checkout
+🔆 Situație: G a .CBG dar a stat pana la sfarsit
+🔆 Departament: R1, R2  (H si G)
+
+===========================
+• H IBM
+• H is asking mediation for RC for the reso cancelled by G HME5Z4YRXW
+• H is reporting that she did not receive the full payout even if the G stayed in the L for the whole stay
+• RC https://admin.airbnb.com/resolutions/CLA-58QHSH9XJH
+• Reso was from Apr 16th to Apr 25th
+• G cancelled on Apr 20th
+• The other reso HM5BZCN5M9 has been made by the same G but for different dates
+• Ambassador escalated to R2 as per mediation for early or late check-in or checkout
+
+
++ H says that:
++ G canceled the reservation by mistake
++ Guest missed check-out
++ G remained in the Listing throughout the reservation
++ Previous Ambassador was assisting the G with the reso but closed the case without making sure that the G rebooked OR if G left the Listing
+
++ ACTIONS with G
+ • OBC, no response
+ • OBM for confirmation
+
++ ACTIONS with H
+ • OBC, no response
+
++ H is requesting 104 euros to have the full Payout for the reso because G stayed for the entire time of the reso
++ I request Loss to compensate the H for the money lost while the G still remains in the Listing (€104.08)
+===========================
+• H satisfied
+• OBM
+• Educated with relevant HC articles
+• No further actions needed
+• Solved
+==============================
+
+Dear __________,
+
+
+My name is Samir and I am part of the Airbnb Community. We hope you are doing well. We tried to call you, but we were unable to reach you.
+
+We are contacting you regarding the reservation HME5Z4YRXW with Laura (Check-in Apr 16, 2024 - Check-out Apr 25, 2024).
+
+Your host informed us that you canceled the reservation by mistake and that you stayed for the entire reservation period. When you canceled, the system automatically processed a refund according to the Cancellation Policy.
+
+Can you confirm these details?
+
+
+
+
+la H
+Secondo le procedure, dovremmo contattare l'ospite. Al momento, l'ospite non ha risposto, proveremo a contattarlo nuovamente.
+
+
+============  H are deja RC deschis
+ IBC by H
+• Pre-auth
+• G cancelled reso HME5Z4YRXW by mistake and stay all the days of the reso in the listing.
+• G gets a partial refund
+• H consequently initiated a request by RC as there is no reason for refund if G stay all the reso length.
+• Ambassador educate H on RC timeframe
+
+HC:
+https://www.airbnb.com/help/article/767
+May 2, 2024, 7:40 PM GMT+3 by Lucia L.
+
+Hi Laura,
+
+I have been investigating your case and I have been able to see that you have an open request for payment in the resolution center.
+In this case, having a procedure already in place to adjust payments related to Billy's first booking, you have to wait for Billy to respond, (he has a 72-hour period from the start of the request to do so).
+If Billy is unwilling to pay the amount asked or unresponsive within the next 46 hours, you may choose to ask Airbnb for assistance at that time to initiate mediation.
+
+I'm sending you an article from the help center with information about the Resolution Center so you can check it out whenever you need it:
+
+https://www.airbnb.com/help/article/767
+
+Please don't hesitate to contact us again when you need us, we'll be happy to help!
+Best regards,
+
+============
+Hi Laura,
+
+I hope all is well!
+
+This is Sumit, one of the Support Ambassadors here at Airbnb and I hope this message finds you well.
+
+I just wanted to connect with you regarding the cancellation for your reservation HME5Z4YRXW in which the Guest accidentally cancelled the reservation as they wanted to change the dates. But as per your policy he cannot get refund for the remaining nights. If you would like to respect the Guest's decision as they really do not have any choice you may help him to get refund for remaining nights so that rebook again for the nights they wanted to change the reservation to.
+
+Please let me know as soon as possible as the Guest is really stressed out for this.
+
+Hope to see your listing flourished with lots of reservations. Should you have any questions in the future, do not hesitate to reach out to us, we are available 24*7 just a message or call away! www.airbnb.com/help Wishing you great success in 2024
+
+Regards,
+Team Airbnb
+
+
+A booking cannot be reinstated once cancelled, However you can help them get back refund for remaining nights and then ask them to book again for new dates.
+
+
+Ciao Laura
+
+spero vada tutto bene!
+
+Questo è Sumit, uno degli Support Ambassador di Airbnb e mi auguro che tutto proceda per il meglio.
+
+Come posso vedere lei ha già inviato un'offerta speciale a Billy, e ha già una prenotazione con lei, quindi spero di essere stato d'aiuto a lei e al suo Ospite per risolvere questo problema. Siamo davvero orgogliosi di avere host come te nella nostra community di Airbnb che hanno standard di ospitalità così elevati.
+
+Ora taggerò questo caso come risolto. Puoi andare avanti e selezionare "No, ho finito" e chiuderà questa conversazione.
+
+Spero che il tuo annuncio sia fiorito con un sacco di prenotazioni. Per qualsiasi domanda in futuro, non esitate a contattarci: siamo disponibili 24 ore su 24, 7 giorni su 7, basta un messaggio o una chiamata! www.airbnb.com/help
+
+Non esitate a contattarci e ricordate che avete un amico Sumit con Airbnb sempre pronto ad aiutarvi. Ti auguriamo un grande successo nel 2024!!!
+
+Cordiali saluti,
+il team Airbnb
+
+• GCI
+• Pre-auth
+• G accidentally canceled instead of changing
+• Asking if I can help for refund as the want to book again but not confirmed if they will book with same H or not
+• Informed will mediate with H and get back
+
+• OBC H & G
+• Closing case as G confirmed
+• G satisfied
+• No further actions needed
+
+====================   G
+Hi Billy,
+
+I hope all is well!
+
+This is Sumit, one of the Support Ambassadors here at Airbnb and the person you were talking to earlier.
+
+I hope I was helpful to solve this issue for you even if I don't speak Italian like your Host does due to which we both were unable to contact them directly. It was really nice talking to you, and it was my pleasure assisting you for this Billy.
+
+Take care to you and your Family Billy.
+
+I will now tag this case as resolved.
+
+You can go ahead and select “No, I’m Done” and it will close this conversation thread.
+
+If you have any further questions or inquiries, feel free to contact us at airbnb.com/contactus. We're open 24/7, and we will be more than happy to assist you.
+
+Please do not hesitate to contact us and remember you have a friend Sumit with Airbnb always there to help.
+
+Your trust and happiness are the keys to a better Airbnb community and I personally thank you for being a part of our Airbnb family.
+
+Regards,
+Team Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

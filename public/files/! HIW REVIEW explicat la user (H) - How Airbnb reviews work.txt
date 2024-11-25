@@ -1,0 +1,66 @@
+🔆 CR: How Airbnb reviews work
+🔆 Situație: ! HIW REVIEW explicat la user (H)
+🔆 Departament: mov
+
+===========================
+ • IBM
+• The user asks How Airbnb reviews work
+• OBM
+• educated
+• IBM
+ • H is satified
+ • OBM
+ • No further actions needed
+====================== [EN]
+
+The author of the review (whether guest or host) can request the removal of their own review at any time.
+
+The host can request the deletion of a review received in the following cases:
+• it is written as a result of an act of blackmail,
+• it is written as a result of an act of revenge,
+• it is written as a result of a threat,
+• it is written for compensation,
+• it is discriminatory,
+• it does not refer at all to the listing or the interaction with the host,
+• if the guest did not check in because they did not arrive for the reservation.
+
+These are the reasons why a review can be removed.
+
+============================= [IT]
+ L'autore della recensione (sia esso ospite o host) può chiedere in qualsiasi momento la rimozione della propria recensione.
+
+L'host può chiedere la cancellazione di una recensione ricevuta nei seguenti casi:
+ • è scritta a seguito di un atto di ricatto,
+ • è scritta a seguito di un atto di vendetta,
+ • è scritta a seguito di una minaccia,
+ • è scritta dietro compenso,
+ • è discriminatoria,
+ • non si riferisce assolutamente all'annuncio o all'interazione con l'host,
+ • se l'ospite non ha effettuato il check-in perché non è arrivato alla prenotazione.
+
+Questi sono i motivi per cui una recensione può essere eliminata.
+
+
+:::::::::::::::::::::::::::::::::::
+È stato un piacere parlare con Lei. Per ricevere informazioni più dettagliate, La invitiamo a consultare l'articolo:
+
+Norme sui contenuti di Airbnb
+Airbnb.it/help/article/546
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐  Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo alla chiusura di questa conversazione.
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

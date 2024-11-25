@@ -1,0 +1,140 @@
+🔆 CR: Early or Late Check-in or Checkout
+🔆 Situație: ! H raporteaza CA G VA intarzia si nu il poate primi
+🔆 Departament: R1, R2 (background rosu)
+
+===========================
++ CoH IBC
+• CoH says that G will not arrive in time for the check-in
+• Check-in interval agreed with G in MT: 15:00 - 19:00
+• Co-H cannot check in after 19:00 and says it is a violation of the Rules from part G
+• CoH asks: What happens after 19:00 if G arrives?
+
++ OBC
+• H received the answer and is satisfied
+
++ OBM
+• Educated with relevant HC articles
+• No further actions needed
+• Solved
+==============================
+☯︎ Deputy Manager's Note ☯︎
++ Floor Support offered
++ Kindly educate Co-H that they're not forced to accommodate G if they do not comply with the CI timeframe, therefore, it can be count as a violation of HR and G can CI the very next day.
++ Supporting WF/HC: https://confluence.airbnb.biz/display/LEN/Check-in+and+listing+access+issues
+nu se ia actiuni pe reso
+dar daca G confirma Va fi CBG din pacate
+dar, lasa asa
++ =================
++ an alt caz aceasi situatei
++ Tier of the ticket: R1
++ User Interaction:IBC
++ Authentication: done
+
++ USER ISSUE:H is asking how to manage in case late check in
+
++ ACTIONS TAKEN:Warm transfer R2
+==============================
+
+
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene.
+
+Grazie per averci contattato in merito alla prenotazione HMRCHBYBSN con Denis. Dalla nostra conversazione abbiamo capito che l'ospite arriverà dopo l'orario di check-in.
+
+La informiamo che non è obbligata a fare il check-in dopo l'orario stabilito con l'ospite. Considerando che l'ospite è stato informato in anticipo dell'orario di check-in, se arriva più tardi, si considera che l'ospite abbia violato le "regole di base per gli ospiti."
+
+Il regolamento Airbnb conferma che non è consentito effettuare il check-in prima o dopo questo intervallo di tempo senza previa approvazione da parte dell'host. Per ottenere maggiori dettagli, La invitiamo cortesemente a consultare l'articolo:
+
+Regole di base per gli ospiti
+Airbnb.it/help/article/2894
+
+Desideriamo confermarLa che non ha alcun obbligo di rimanere oltre le 19:00 per il check-in.
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐  Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo alla chiusura di questa conversazione.
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+========================= poate poate
+Esiste la possibilità sa faceti check in dupa aceasta ora daca dumneavoastra doriti si puteti. Din partea noastra nu este nici o problema.
+
+oltre l'orario limite stabilito, ma ciò dipende dalla Sua disponibilità ad aiutare l'ospite che arriva da lontano e che potrebbe essere in ritardo a causa dei mezzi di trasporto. Tuttavia, desideriamo confermarLe che non ha alcun obbligo di rimanere oltre le 19:00 per il check-in.
+
+============= GUIDE
+It is important to read and acknowledge the information below
+In order to meet commitments to our community, it is required that we document all reported violations of our guest standards. That is why we need you to accurately fill out the information in this guide. To ensure we are meeting our commitments we will be conducting quality reviews to confirm this guide was filled out completely and correctly.
+
+Because of the ticket topic selected, you are required to document the outcome for the violation reported. This includes when:  
+
+the violation was proven to not have occurred
+there was only a reported/suspected violation 
+the issue was resolved between the host and guest
+Click "Continue" to confirm you understand the requirement for completing this report, and acknowledge your work will be reviewed.
+
+==============
+Before you start this guide, make sure you have the following information
+What exactly is the host reporting?
+
+Who are they reporting as responsible for the violation?
+When are they saying the violation happened?
+What were the specifics of the violation (ex: If the host is reporting cleanliness, was it dirty dishes? towels with makeup?)
+Does the host have documentation of the concerns reported? (ask for it!)
+
+Photos of the violation or aftermath
+Screenshots of conversations
+Were there any relevant contextual factors?
+
+What was the impact of the violation on the host? (ex: Did they have to cancel reservations? Pay more than their standard cleaning fee?)
+Did the guest have a personal reason for violating the House rule (ex: religious, personal health, etc.)?
+Do the house rules or message thread reveal any agreements about this issue prior to confirming the booking/check-in?
+
+
+
+============
+Please select each major Guest Standard violation the host is reporting
+>> None of the above
+
+==========
+Review the information below before continuing
+If any of the examples below match the report you are working on, you must go back and document the violation as described in the example.
+
+The violation was proven to not have occurred:
+When the reporter admits the violation did not actually occur, or there is documentation proving the violation did not occur, you are still required to fill out the guide. In this case you will still be required to select the violation that was reported, and then select the option and the type of proof documenting why the violation did not occur.
+
+There was only a reported/suspected violation:
+When there is no proof that a violation did or did not occur, you still need to document the violation being reported. In this case you will still be required to select the violation that was reported, and select the evidence option indicating the reporter witnessed or suspects a violation happened.
+
+The issue was resolved between the host and guest:
+When a host or guest contacts us about a violation, and then follows up to say the issue has been solved by the other party or they reached some other type of agreement. In this case you will document the violation that was reported, and when required, complete the mitigating factor section documenting the issue was resolved. You will still need to document if there was any evidence to support that the violation occurred.
+If you are working a ticket in which a violation was not reported, close and save this guide, then change the ticket topic to the appropriate one
+
+
+============== a redeschis
++ IBM form User
++ OBC
++ H was informed once again that he is not obliged to receive G outside the check-in interval
+• No further actions neededAbbiamo appena parlato al telefono.
+
+Vi informiamo che in conformità con il regolamento di Airbnb non siete obbligati ad accogliere un ospite al di fuori dell'orario di check-in. Inoltre, vi confermiamo che se l'ospite annulla la prenotazione non riceverà alcun rimborso. Se l'ospite desidera ulteriori dettagli, può contattarci.
+
+Vi ringraziamo per averci contattato e per essere un SuperHost nella nostra community! È stato un piacere servirVi! Restiamo a Vostra disposizione per qualsiasi altra evenienza.
+
+In caso non abbiate bisogno di ulteriori informazioni, Vi auguriamo una piacevole serata e Vi invitiamo a selezionare "No, ho finito" per chiudere questa conversazione.
+
+Un saluto,
+Airbnb Support
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

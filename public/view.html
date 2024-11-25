@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K33P > Afiseaza</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Frame-ul principal cu conținutul */
+        #frame {
+            width: 80%;
+            height: 80%;
+            margin: 20px auto;  /* Spațiu între navbar și iframe */
+            background-color: #212121;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Bara de sus a frame-ului (inclusă în frame) */
+        #top-bar {
+            background-color: #333;
+            padding: 5px; /* Redus padding-ul pentru a micșora bara */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Stil pentru butoanele din bara de sus */
+        .top-bar-button {
+            background-color: #444;
+            color: white;
+            padding: 5px 10px; /* Micșorăm padding-ul */
+            border: none;
+            cursor: pointer;
+            font-size: 12px; /* Micșorăm dimensiunea fontului */
+            border-radius: 8px; /* Colțuri rotunjite mai mici */
+        }
+
+        .top-bar-button:hover {
+            background-color: #555;
+        }
+
+        /* Alinierea butoanelor în partea stângă */
+        .left-buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px; /* Spațiu între butoane */
+        }
+
+        /* Alinierea butoanelor în partea dreaptă */
+        .right-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px; /* Spațiu între butoane */
+        }
+
+        /* Iframe-ul pentru încărcarea fișierului */
+        iframe {
+            flex-grow: 1;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Bara de jos */
+        #bottom-bar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Butoane din bara de jos - Dimensiuni ajustate */
+        .bottom-bar-button {
+            background-color: #444;
+            color: white;
+            padding: 5px 10px; /* Aliniere cu butoanele din bara de sus */
+            border: none;
+            cursor: pointer;
+            font-size: 12px; /* Dimensiune font similară cu butoanele din bara de sus */
+            margin: 0 10px;
+            border-radius: 8px; /* Colțuri rotunjite ca în bara de sus */
+        }
+
+        .bottom-bar-button:hover {
+            background-color: #555;
+        }
+
+        /* Butoane bifabile */
+        input[type="checkbox"] {
+            accent-color: #00FF00; /* Verde aprins pentru bife */
+            margin: 0 5px;
+        }
+
+        /* Stil pentru butoanele Save si Save as */
+        .save-button {
+            background-color: yellow;
+            color: red;
+            padding: 5px 10px; /* Micșorăm padding-ul */
+            border: none;
+            cursor: pointer;
+            font-size: 12px; /* Micșorăm dimensiunea fontului */
+        }
+
+        .save-button:hover {
+            background-color: #f0c000;
+        }
+
+        /* Stil pentru butonul Edit si Cancel Edit */
+        .edit-button {
+            color: white;
+        }
+
+        .edit-button.cancel-edit {
+            color: red;
+        }
+
+        /* Titlu pentru pagina */
+        h1 {
+            font-size: 32px;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            text-align: center;  /* Aliniază textul pe orizontală */
+            align-self: center;  /* Aliniază titlul pe verticală */
+        }
+
+        /* Titlu pentru pagina */
+        h3 {
+            font-size: 12px;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: left;  /* Aliniază textul pe orizontală */
+            width: 80%;  /* Setează lățimea pentru a fi similară cu iframe-ul */
+            align-self: center;  /* Aliniază titlul pe verticală */
+        }
+
+
+    </style>
+</head>
+<body>
+    <br> <br>
+<!-- Bara de navigare Sus si Jos si Settings modal -->
+    <script src="navbar.js"></script>
+    <script src="settingsModal.js"></script>
+
+
+<h3>Situatie:</h3>
+<h3>CR:</h3>
+<h3>WF:</h3>
+
+
+<!-- Frame-ul principal cu conținut -->
+<div id="frame">
+    <!-- Bara de sus a frame-ului -->
+    <div id="top-bar">
+        <!-- Butoane în partea stângă -->
+        <div class="left-buttons">
+            <h3>Situatie:</h3>
+        </div>
+
+        <!-- Butoane în partea dreaptă -->
+        <div class="right-buttons">
+            <button class="top-bar-button" onclick="loadContent('IT')">IT</button>
+            <button class="top-bar-button" onclick="loadContent('EN')">EN</button>
+            <button class="top-bar-button" onclick="loadContent('FR')">FR</button>
+            <button class="top-bar-button" onclick="loadContent('FR')">HOST</button>
+
+        </div>
+    </div>
+
+    <!-- Iframe pentru conținut -->
+    <iframe id="content-frame" src="files/IT.txt"></iframe>
+
+<!-- Bara de jos -->
+<div id="bottom-bar">
+    <label><input type="checkbox" id="all" onchange="toggleAll()"> All</label>
+    <label><input type="checkbox" id="cr"> CR</label>
+    <label><input type="checkbox" id="an" checked> AN</label>
+    <label><input type="checkbox" id="obm" checked> OBM</label>
+    <label><input type="checkbox" id="ibc-speech"> IBC Speech</label>
+    <label><input type="checkbox" id="obc-speech"> OBC Speech</label>
+    <label><input type="checkbox" id="wf"> WF</label>
+    <label><input type="checkbox" id="hc"> HC</label>
+
+    <!-- Butoane pentru culori și categorie -->
+    <button class="bottom-bar-button" onclick="changeBackgroundColor()">Background Color</button>
+    <!-- Șters butonul Text Color -->
+    <button class="bottom-bar-button" onclick="showMarginColor()">Margin Color</button>
+    <button class="bottom-bar-button" onclick="changeCategory()">Category</button>
+</div>
+
+</div>
+
+<!-- Input pentru a deschide un fișier local (Hidden) -->
+<input type="file" id="file-input" style="display: none;" accept=".txt" onchange="loadLocalFile(event)">
+
+<!-- Script inclus pentru funcționalitățile interfeței -->
+<script>
+    let originalText = '';  // Salvează textul original din fișierul încărcat
+    let isEditing = false;  // Verifică dacă se află în modul de editare
+
+ 
+    // Funcție pentru a încărca diferite fișiere în iframe
+    function loadContent(language) {
+        const iframe = document.getElementById('content-frame');
+        iframe.src = "files/" + language + ".txt"; // Încărcăm fișierul corespunzător limbii + Adăugăm calea către folderul files
+
+    }
+
+    // Funcție pentru a începe editarea
+    function startEditing() {
+        const iframe = document.getElementById('content-frame');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+        // Salvează textul original înainte de editare
+        originalText = iframeDocument.body.innerText;
+
+        // Permite editarea textului
+        iframeDocument.body.contentEditable = true;
+
+        // Schimbă butonul Edit în Cancel Edit și stilul acestuia
+        const editButton = document.getElementById('editButton');
+        editButton.textContent = 'Cancel Edit';
+        editButton.classList.add('cancel-edit');
+        
+        // Creează butoanele "Save" și "Save as"
+        createSaveButtons();
+
+        // Setează starea de editare
+        isEditing = true;
+    }
+
+    // Funcție pentru a crea butoanele "Save" și "Save as"
+    function createSaveButtons() {
+        const editButtonContainer = document.querySelector('#top-bar div:nth-child(2)');
+        const saveButton = document.createElement('button');
+        saveButton.textContent = 'Save';
+        saveButton.className = 'save-button';
+        saveButton.onclick = saveContent;
+
+        const saveAsButton = document.createElement('button');
+        saveAsButton.textContent = 'Save as';
+        saveAsButton.className = 'save-button';
+        saveAsButton.onclick = saveAsContent;
+
+        editButtonContainer.insertBefore(saveButton, document.querySelector('.top-bar-button:last-child'));
+        editButtonContainer.insertBefore(saveAsButton, document.querySelector('.top-bar-button:last-child'));
+    }
+
+    // Funcție pentru a salva modificările
+    function saveContent() {
+        const iframe = document.getElementById('content-frame');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const newText = iframeDocument.body.innerText;
+        console.log('Saved content:', newText);
+    }
+
+    // Funcție pentru a salva sub un alt nume
+    function saveAsContent() {
+        const iframe = document.getElementById('content-frame');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const newText = iframeDocument.body.innerText;
+        console.log('Saved as new file:', newText);
+    }
+
+    // Funcție pentru a anula editarea
+    function cancelEdit() {
+        const iframe = document.getElementById('content-frame');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        iframeDocument.body.innerText = originalText;
+        iframeDocument.body.contentEditable = false;
+        const editButton = document.getElementById('editButton');
+        editButton.textContent = 'Edit';
+        editButton.classList.remove('cancel-edit');
+
+        const saveButton = document.querySelector('.save-button');
+        const saveAsButton = document.querySelector('.save-button');
+
+        if (saveButton) document.querySelector('#top-bar div:nth-child(2)').removeChild(saveButton);
+        if (saveAsButton) document.querySelector('#top-bar div:nth-child(2)').removeChild(saveAsButton);
+
+        isEditing = false;
+    }
+
+    // Funcție pentru a copia textul
+    function copyText() {
+        const iframe = document.getElementById('content-frame');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const text = iframeDocument.body.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            console.log('Text copied to clipboard');
+        }).catch(err => {
+            console.error('Error copying text: ', err);
+        });
+    }
+
+    // Funcție pentru a activa/dezactiva butoanele din bara de jos
+    function toggleAll() {
+        const allChecked = document.getElementById('all').checked;
+        document.querySelectorAll('#bottom-bar input[type="checkbox"]').forEach(checkbox => {
+            checkbox.checked = allChecked;
+        });
+    }
+
+    // Funcție pentru a încărca un fișier local
+    function loadLocalFile(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const iframe = document.getElementById('content-frame');
+                iframe.srcdoc = e.target.result;
+            }
+            reader.readAsText(file);
+        }
+    }
+</script>
+
+<br> <br>
+</body>
+</html>

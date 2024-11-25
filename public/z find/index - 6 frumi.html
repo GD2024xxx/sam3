@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K33P > Find</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #212121; /* Set background to #212121 */
+            color: #fff; /* White text for contrast */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #4285f4;
+            margin: 20px 0;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center; /* Center the search bar */
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 12px;
+            width: 300px;
+            font-size: 16px;
+            border: 2px solid #4285f4;
+            border-radius: 20px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #34a853;
+            box-shadow: 0 0 10px rgba(52, 168, 83, 0.5);
+        }
+
+        .toggle-view-button {
+            padding: 12px 24px;
+            background-color: #34a853;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 20px; /* Add some space between the button and the search bar */
+        }
+
+        .toggle-view-button:hover {
+            background-color: #4285f4;
+        }
+
+        .file-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-start;
+            overflow-y: auto;
+            padding: 0 20px;
+        }
+
+        .file-list, .file-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .file-item {
+            background-color: #333; /* Dark card background */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 280px;
+        }
+
+        .file-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .file-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .file-item-content {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.5;
+            margin-top: 10px;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .no-results {
+            font-size: 16px;
+            color: #999;
+            text-align: center;
+            width: 100%;
+        }
+
+        .loading {
+            text-align: center;
+            font-style: italic;
+            color: #4285f4;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 12px;
+            width: 80%;
+            max-height: 80vh;
+            overflow-y: auto;
+            color: #333;
+        }
+
+        .modal-content pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            color: #444;
+        }
+
+        .close {
+            font-size: 30px;
+            font-weight: bold;
+            color: #888;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        .change-background-button {
+            padding: 8px 16px;
+            background-color: #f4b400;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .change-background-button:hover {
+            background-color: #db4437;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find Notes</h1>
+
+    <div class="top-bar">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Enter note name..." oninput="debouncedSearch()">
+        </div>
+        <button class="toggle-view-button" id="toggleViewBtn" onclick="toggleView()">Switch to Grid View</button>
+    </div>
+
+    <div class="file-container">
+        <div id="loading" class="loading" style="display: none;">Searching...</div>
+        <div id="fileList" class="file-list"></div>
+        <div id="gridView" class="file-grid" style="display: none;"></div>
+    </div>
+
+    <!-- Modal pentru afișarea conținutului fișierului -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let debounceTimer;
+        let isGridView = false;
+
+        function debouncedSearch() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(searchFiles, 300);
+        }
+
+        function searchFiles() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const fileList = document.getElementById('fileList');
+            const gridView = document.getElementById('gridView');
+            const loading = document.getElementById('loading');
+
+            fileList.innerHTML = "";
+            gridView.innerHTML = "";
+            loading.style.display = 'block';
+
+            fetch('/files')
+                .then(response => response.json())
+                .then(files => {
+                    loading.style.display = 'none';
+                    const filteredFiles = files.filter(file => file.toLowerCase().includes(query));
+
+                    if (filteredFiles.length > 0) {
+                        filteredFiles.forEach(file => {
+                            const div = document.createElement('div');
+                            div.classList.add('file-item');
+                            const title = document.createElement('div');
+                            title.classList.add('file-item-title');
+                            title.textContent = file;
+                            const content = document.createElement('div');
+                            content.classList.add('file-item-content');
+
+                            fetch(`/file-content?name=${encodeURIComponent(file)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const contentText = data.content.split('\n').slice(0, 4).join('\n');
+                                    content.textContent = contentText;
+                                });
+
+                            const changeBgButton = document.createElement('button');
+                            changeBgButton.classList.add('change-background-button');
+                            changeBgButton.textContent = 'Change Background';
+                            changeBgButton.onclick = () => changeCardBackground(div);
+
+                            div.appendChild(title);
+                            div.appendChild(content);
+                            div.appendChild(changeBgButton);
+                            div.onclick = () => openModal(file);
+
+                            if (isGridView) {
+                                gridView.appendChild(div);
+                            } else {
+                                fileList.appendChild(div);
+                            }
+                        });
+                    } else {
+                        const noResults = document.createElement('div');
+                        noResults.classList.add('no-results');
+                        noResults.textContent = 'No files found';
+                        if (isGridView) {
+                            gridView.appendChild(noResults);
+                        } else {
+                            fileList.appendChild(noResults);
+                        }
+                    }
+                })
+                .catch(error => {
+                    loading.style.display = 'none';
+                    console.error("Error fetching files:", error);
+                });
+        }
+
+        function openModal(fileName) {
+            const modal = document.getElementById('myModal');
+            const modalContent = document.getElementById('modalContent');
+
+            fetch(`/file-content?name=${encodeURIComponent(fileName)}`)
+                .then(response => response.json())
+                .then(data => {
+                    modalContent.innerHTML = `<pre>${data.content}</pre>`;
+                    modal.style.display = 'block';
+                })
+                .catch(error => {
+                    modalContent.textContent = 'Error loading file content.';
+                    modal.style.display = 'block';
+                });
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        function toggleView() {
+            isGridView = !isGridView;
+            document.getElementById('fileList').style.display = isGridView ? 'none' : 'block';
+            document.getElementById('gridView').style.display = isGridView ? 'flex' : 'none';
+            const toggleViewBtn = document.getElementById('toggleViewBtn');
+            toggleViewBtn.textContent = isGridView ? 'Switch to List View' : 'Switch to Grid View';
+            searchFiles();
+        }
+
+        function changeCardBackground(card) {
+            card.style.backgroundColor = card.style.backgroundColor === 'rgb(51, 51, 51)' ? '#f4b400' : '#333'; // Toggle background color
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+🔆 CR:  Disputing a review you received
+🔆 Situație: review nu se poate scoate   .tr2    .rev
+🔆 Departament: verde
+
+===========================
+review nu se poate scoate         .rev
+
+CR: Disputing a review you received
+   R1.mg (15m)   .tr2 er2
+   R2.mg 
+ ==============================
+• Case received via IBM
+ • The User is: HOST
+ • User’s account is suspended? : NO
+
+ • REQUEST:
+ • User asked to remove the Review left by the other party
+ • User disputes a Review received
+ •  Questions related to reservation insurance?:  NO
+
+ • INVESTIGATION:
+ • The Review contains no violation
+
+ • ACTIONS:
+ • The Support Ambassador educated the Reporter that the review does not contain a violation of Airbnb's Reviews Policy
+
+ • OBM
+ • Macro applied:
+Account:: Reviews:: Disputes:: Private and confidential information:: No violation
+
+ • No further actions needed
+=============================
++ Outside reasonable hours
++ OBM
+
+ • Reason for pending: Awaiting response
+=====================  user nu da detalii:
+Is the user’s account suspended?
+Check for account suspension flags (ex: Ghosted, Blocked from making reservations, etc.) on the user's Nova profile. These flags indicate that the user is suspended from using Airbnb.
+
+Who is making contact?
+
+Primary Host (Main Host of a reservation)
+Limited to Listing Owner, Full-Access Co-Host, POC or a member of the Hosting Team
+
+Non-Primary Host or Other
+A Co-Host who is not the primary Host on a reservation
+
+Guest
+Primary guest who made the reservation
+
+Co-traveler Or Other
+Additional guest added to the reservation
+
+Investigate the details of the stay to determine if an escalation is required (ex: review content, message thread, etc.).
+Does content related to this reservation mention discrimination, unsafe stays, parties in listings, etc. that require escalation?
+If you read content that include mentions like discrimination, unsafe hosting, legal action, party in listing etc. the case may need to be escalated. If so, click yes and follow the next instructions.
+====================== identificam rezervarea cu recenzia
+
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene. 
+
+Dalla nostra conversazione ho capito che vi riferite alla prenotazione __________ e che desiderate rimuovere la recensione lasciata dall'ospite __________ per Lei. Potete confermarmi se ho capito correttamente ?
+
+______________________________________________________________
+=========pregatire psychological inainte de refuz===== OBM 2 
+Grazie per la vostra risposta.
+
+Ci dispiace sapere che questa recensione vi ha colpito. Sappiamo che le recensioni, anche se soggettive, riflettono comunque l'opinione della persona che le ha lasciate. Tuttavia, alcune recensioni violano i Termini delle recensioni di Airbnb, ma per questo è necessario esaminare il contesto e il contenuto della recensione.
+
+Esamineremo attentamente questa recensione per vedere se viola il regolamento di Airbnb riguardante le recensioni. Questo regolamento è pubblico e, se lo desiderate, potete leggerlo anche voi. Di seguito vi forniremo le regole che si applicano alle recensioni:
+
+Termini delle recensioni di Airbnb
+Airbnb.it/help/article/2673
+
+Rispondere a una recensione o contestarla
+Airbnb.it/help/article/32
+
+Recensioni degli host e degli ospiti relative ai soggiorni
+Airbnb.it/help/article/13
+
+Norme sui contenuti di Airbnb
+Airbnb.it/help/article/546
+
+Scrivere recensioni pertinenti e imparziali
+Airbnb.it/help/article/3055
+
+
+=====user baga motive
+La ragazza era al corrente del fatto che avevamo quei problemi con riscaldamento ed acqua calda ma nonostante il mio avviso prima del check in è voluta comunque venire quindi non lo trovo giusta come recensione
+
+================ informare ca nu se scoate:
+In seguito a un'indagine interna, abbiamo stabilito che la recensione non contiene dati personali che potrebbero identificarla (ad esempio, numero di un documento d'identità, recapiti, informazioni mediche o indirizzo dell'alloggio) e non viola i nostri termini, pertanto non possiamo rimuoverla. Per maggiori informazioni sulla nostra Politica sui contenuti, consulti questa pagina del Centro Assistenza:
+
+Norme sui contenuti di Airbnb
+Airbnb.it/help/article/546
+
+========================================user baga motive 2
+Avete letto il mio messaggio di spiegazione ?
+
+=============================================== confirmare
+Sì, certamente, anche se l'utente è stato informato che non c'era __________, ciò non lo ferma dal esprimere la propria opinione.
+
+Comprendiamo profondamente il suo desiderio di rimuovere la recensione scritta da __________ in seguito al soggiorno trascorso nel suo alloggio. Tuttavia, è importante sottolineare che la pratica di rimuovere recensioni non fa parte della nostra politica. Le recensioni, infatti, svolgono un ruolo cruciale nel fornire agli altri utenti una chiara visione dell'esperienza vissuta dai nostri host e ospiti.
+
+Per ottenere ulteriori informazioni sulle circostanze in cui consideriamo la rimozione di recensioni, la invitiamo a consultare i nostri Termini delle recensioni:
+
+Termini delle recensioni di Airbnb
+https://www.airbnb.it/help/article/2673
+
+Dopo un'attenta valutazione, possiamo confermare che la recensione del suo ospite non viola i nostri termini.
+
+============================= pregatesti incheierea
+Possiamo esservi d'aiuto con qualcos'altro?
+================ userull insista
+
+============== OBC si ii iexplici audio
+ii oferi posibilitatea de author removal daca G vrea
+
+============================================================
+============================ obm pregatire final:
+In questa situazione, la recensione non può essere rimossa su vostra richiesta, poiché il contenuto di questa recensione non ha violato i Termini delle recensioni di Airbnb.
+
+L'unica situazione in cui qualsiasi recensione può essere rimossa è quando l'autore della recensione lo richiede. In altre parole, se la persona che ha scritto la recensione contatta l'Assistenza Airbnb e chiede la rimozione della recensione, ciò è possibile. Ogni utente può rimuovere le proprie recensioni, è sufficiente contattarci. Per ottenere maggiori dettagli, La invitiamo cortesemente a consultare gli articoli:
+
+Eliminare una recensione
+Airbnb.it/help/article/13#section-heading-5-1
+
+Come funzionano le recensioni
+Airbnb.it/help/article/3127
+
+Con questa occasione, desideriamo ringraziarLa per aver scelto di far parte della comunità Airbnb. Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Ogni volta ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrire il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐  Airbnb.com/help/contact_us
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+============================== AN de final, dupa apel
+ • OBC
+ • The Support Ambassador explained to the User the reasons why we cannot remove the review
+ • The Support Ambassador confirmed that the only way to remove the review is if the request comes from the author of the review
+ • The user is satisfied with the information received and says that he will contact the other party to ask him to remove the review
+
+  • The Support Ambassador asked the User if he still needs our assistance
+  • The User affirmed that they no longer require it
+
+  • OBM
+  • The Support Ambassador educated the Reporter using appropriate Help Center articles
+
+ • No further actions needed
+ • Cases resolved
+==============================
+
+
+
+
+
+
+
+
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+============ alte info
+----------------------------------
++ H IBC
++ H ask to dispute a review
++ H prefers to receive the answer by message
++ OBM (introductory message)
++ Support Ambassador investigated according to the "Review Dispute guide" and Workflow:
+https://confluence.airbnb.biz/display/LEN/Review+dispute
+
+RESOLUTION:
++ The review is relevant, has no violation and cannot be hidden
++ OBM (with the resolution)
+
+
+
+
+First, we want to thank you for being part of the Airbnb Community. It takes a lot of dedication and care to host. We recognize that and appreciate all of your effort.
+
+
+
+We also know how important reviews are to you and to your business. Getting a review you disagree with can be discouraging and we are sensitive to your experience. Unfortunately, after a thorough investigation, we’ve found that the review left for you by __GUEST__for reservation _RESERVATION CODE_ is not eligible to be removed because it does not violate our Reviews Policy. 
+
+
+
+Our Reviews Policy is in place to foster trust and authenticity on the platform. In order to accomplish this, there is a fairly limited number of circumstances in which we remove reviews, which are outlined in our Reviews Policy in our Help Center: https://www.airbnb.com/help/article/2673(opens in a new tab).
+
+These new macros must be used when handling review disputes, and they can be found in the Nova Guide.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::   review dispute refuz
+Gentile Filippo,
+sono Sara, Support Ambassador di Airbnb. Analizzero' la recensione e le daro' una risposta il prima possibile.
+
+Cordialmente,
+Sara
+--------------------------------------------
+
+L'oggetto della sua richiesta come ho potuto notare è la recensione scritta da Emna, per la prenotazione HMCZZSEY2K.
+
+Sono davvero spiacente del feedback non pienamente soddisfacente dell'utente che sicuramente non rispecchierà l'impegno e la qualità del vostro lavoro.
+Tuttavia non possiamo in questo caso intervenire per la rimozione della recensione in oggetto, seguendo i parametri di valutazione attuali che guidano tale argomento. Capiamo perfettamente il punto di vista degli Host in circostanze simili e avremmo sicuramente preferito accondiscendere a tale richiesta, soddisfacendola, ma la recensione non risulta essere contro le relative linee guida attive in questo momento.
+
+Come potrà verificare lei stesso consultando l'articolo sul nostro Help Center - al link sotto - valutiamo esclusivamente ciò che può essere oggettivo, ovvero la parte scritta (e non il rating) e più precisamente:
+* il linguaggio utilizzato * la rilevanza delle informazioni in base all'esperienza dell'utente * elementi che possano eventualmente certificare che la recensione sia collegata ad atti di ritorsione.
+L'attuale politica della compagnia è comunque intervenire poco su tale argomento, ritenendo gli utenti liberi e maturi di gestire con la dovuta precauzione i loro feedback all'interno di quella che vuole essere una Community mossa dai valori della condivisone e del buon senso. Possiamo eliminare una recensione, reclamata dal ricevente, solo in caso di violazione della presente politica o se richiesto dall'autore della stessa.
+Ciò che non possiamo giudicare purtroppo è la parte soggettiva, ovvero l'opinione dell'utente e la sua personale percezione delle stelle per il rating, la volontà di assegnazione delle stesse o il suo personale feeling con l'esperienza vissuta, che indipendentemente dalla professionalità dell'Host e dalla sua competenza, potrebbe anche in rari casi non rispecchiare l'impegno dedicatogli.
+
+Termini delle recensioni di Airbnb https://www.airbnb.it/help/article/2673/
+
+Nonostante l'impossibilità nell'accogliere il suo reclamo, comprendiamo che le recensioni siano infatti un argomento molto delicato col quale si verificano spesso delle frizioni. Sappiamo di non essere perfetti, ma come nostro solito, cerchiamo di modellare il prodotto sempre verso una migliore forma con l'andare del tempo e ciò non sarebbe possibile se non grazie ai feedback dei nostri utenti al fine di migliorare la loro esperienza con possibili modifiche al prodotto.
+L'opinione dei nostri utenti è preziosa e fondamentale a questo scopo - saremo felici se potesse trovare il tempo di lasciarci il suo parere su come migliorare le recensioni al link qui di seguito: airbnb.com/help/feedback.
+
+Non esiti a contattarci per qualsiasi dubbio, chiarimento, consulenza: siamo a vostra completa disposizione.
+
+Cordialmente,
+Sara
+
+============================================================
+Thank you for your patience, X.I’ve gone over the review left by your host two times. I understand that this review may have come as a surprise, and I sincerely see your point regarding it.Airbnb values free speech, our platform depends on transparent, honest feedback, even when that feedback isn't great.We have a strict policy not to remove, censor or edit reviews, as doing so would jeopardise the reliability of our entire review system.We only consider exceptions in the event of extraordinary cases where the content outright violates our guidelines, which X review does not. The host's review details her perspective, which is completely subjective.While some reviews may be harsh, Airbnb is a third party who is not present during the reservation, so it is not up to us to judge the niceness, fairness, or truth of a review.Please X, do not fret over this review, as it is clearly the outlier in your reviews as a whole. The vast majority of your reviews are lovely. In my extensive experience, the Airbnb community takes all comments into consideration. I feel confident that the other reviews will provide a clearer picture than this one alone.I see that you did not leave a response to the host's review explaining your perspective, and I advise doing so, to express your point regarding X's review. Although the reviewer’s comments may be unfair, your response and all the good review you have have the ability to completely overshadow any negative statements made about you and may leave a much stronger impression of your credibility.As much as I would like to help you more and remove the review, I am not able to do so.
+
+
+
+Gentile ----.,Sono Andrei di Airbnb.Abbiamo esaminato il contenuto della recensione scritta da Eugene per la prenotazione ----. e non abbiamo identificato abbastanza punti di violazione della nostra politica. Per questo motivo, non siamo in grado di rimuovere la recensione dal sito web di Airbnb.Per il momento, le consigliamo di dedicare del tempo a leggere come funzionano le recensioni su Airbnb. La invitiamo a consultare questi articoli del nostro Centro Assistenza:https://www.airbnb.it/help/article/13https://www.airbnb.it/help/article/548Cordiali saluti,Capisco che questo potrebbe non essere l'esito da lei sperato, però, dopo aver esaminato attentamente la recensione del suo ospite, mi dispiace informarla che non possiamo rimuoverla dalla nostra piattaforma in quanto rispetta le nostre linee guida sul contenuto.Anche se ci aspettiamo che tutti i membri della community pubblichino recensioni che contengano informazioni obiettive e accurate, incoraggiandoli ad agire in tal modo, Airbnb non interviene in caso di controversie riguardanti la veridicità delle stesse. Ci aspettiamo che l'autore della recensione si faccia garante dei relativi contenuti.Cordiali saluti,-----------ENGDear Sophia,I'm Andrei from Airbnb.We have reviewed the content of the review written by Nicolas for HMCAY3CM2F booking and have not identified enough points of violation of our policy. For this reason, we are unable to remove the review from the Airbnb website.For now, we recommend that you take the time to read about how reviews work on Airbnb. Please check out these articles in our Help Center:https://www.airbnb.com/help/article/13https://www.airbnb.com/help/article/548I understand that this may not be the outcome you were hoping for, however, having carefully reviewed your guest's review, I regret to inform you that we cannot remove it from our platform as it complies with our content guidelines.While we expect all community members to post reviews that contain objective and accurate information, and encourage them to do so, Airbnb does not intervene in the event of a dispute regarding the veracity of the same. We expect the author of the review to vouch for its contents.What you can do is leave a response to his review where you can leave your opinion regarding the things that he mentioned. You have the possibility to do so.I'm sorry again and I wish I would bring you better news but we must follow the Airbnb T&C regarding the reviews.I hope the information I have provided you is pertinent and please, let me know if there is something else that I can help you with.Best regards,Andrei
+
+
+
+
+Instructions if the user is on the phone
+
+If user is on the call, advise the following: 
+"In order to review your dispute, we will require time to conduct a thorough investigation to determine if the review dispute violates our Review Fairness Policy."
+"We'll communicate our review decision through the Airbnb message platform and/or email"
+Before hanging up, gather any more information from the user that will support the offline investigation.
+Offline instructions
+
+Prior to concluding that a review should be retained (not removed), you must go through all sections of the Review Fairness Policy before providing a decision to the user.
+Note that the choices below should contain all the policy and contextual information you need in order to make a selection and resolve a review dispute case, but in the event you need more information, please consult the Review Disputes workflow.
+
+
+
+
+
+
+Gentile Sandro,
+
+Mi chiamo Anca e sono Support Ambassador per Airbnb. Felice di assisterla oggi.
+
+La voglio informare di aver rimosso la recensione di Erika per la prenotazione HM5KDADQCJ poiché violava i rispettivi termini.
+
+La rcensione non conteneva informazioni sufficientemente pertinenti che potessero aiutare i membri della nostra community a prendere decisioni ponderate in materia di prenotazioni oppure ospitalità.
+
+Può trovare maggiori informazioni nel seguente articolo del Centro Assistenza:
+
+airbnb.com/help/article/548
+
+Se non ha altre domande, per il momento considereremo chiuso questo caso. La ringraziamo di aver contattato il team di assistenza alla community di Airbnb.
+Per qualsiasi esigenza, non esiti a contattarci all'indirizzo: www.airbnb.com/help.
+
+Cordiali saluti,
+Anca A
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

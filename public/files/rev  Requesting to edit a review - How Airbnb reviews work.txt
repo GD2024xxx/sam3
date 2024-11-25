@@ -1,0 +1,49 @@
+🔆 CR: How Airbnb reviews work
+🔆 Situație: .rev  Requesting to edit a review
+🔆 Departament: 
+
+===========================
+
+ • User asks to Edit the Review
+ • User was educated that it is not possible to modify the review, but only to delete it if wishes
+ • User is Unresponsive
+ • OBM
+ • No further actions needed
+==================================
+
+Gentile Gianluca,
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene.
+
+Si riferisce alla recensione che Lei ha scritto per Julien? La nostra politica sulle recensioni non permette la modifica delle recensioni, solo la cancellazione è permessa. La recensione verrà cancellata e non potrà essere scritta una nuova. Desidera che la cancelliamo?
+==================================
+
+
+Il regolamento di Airbnb riguardo alle recensioni non permette la modifica o la correzione di una recensione. L'unica cosa consentita dal regolamento è annullare la recensione insieme al numero di stelle.
+Eliminare una recensione
+https://www.airbnb.it/help/article/3582
+
+
+
+==================================
+Attendiamo la vostra risposta.
+
+
+
+======= idiotul n.r.
+Abbiamo voluto assicurarci che Lei abbia ricevuto il messaggio e nel caso avesse avuto bisogno di ulteriore assistenza.
+
+A causa dell'assenza di risposta da parte Sua, procederemo alla chiusura della nostra conversazione. Desideriamo ringraziarLa per aver scelto di far parte della nostra comunità e Le ricordiamo che siamo disponibili 24/7 per assistere Lei. Se avesse bisogno di qualcosa, La prego di non esitare a contattarci:
+• all'indirizzo airbnb.com/help
+• o al numero di telefono +39 0699366533
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::

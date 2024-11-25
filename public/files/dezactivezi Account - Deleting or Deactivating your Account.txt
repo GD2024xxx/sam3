@@ -1,0 +1,70 @@
+🔆 CR: Deleting or Deactivating your Account
+🔆 Situație: dezactivezi Account .delete
+🔆 Departament: 
+CR: Deleting or Deactivating your Account
+WF: Account Deactivation
+HC: Deactivating or deleting your account
+CE.mg   +   R1.mg   +   R2.mg             [.CE] [dCE] [dCE.mg]
+
+===========================
++ U IBC
+• Request: Account Deactivation by us
+• Reason: Duplicate Accounts
+
++ INVESTIGATION:
+• Existing Reservations? > NO
+• Current or future reservations? > NO
+• Fully Authenticated: YES
+• Account was Deactivated
+
++ Workflow used:
+Account Deactivation
+https://confluence.airbnb.biz/display/LEN/Account+deactivation#Accountdeactivation-Userdeactivationflow
+
++ OBE for Confirmation
+• Macro applied:
+Deactivate Account Confirmation
+
+• No further actions needed
+• Solved
+
+• Phone Call was linked to the Case:
+___________________________________
+==========================
+
+
+
+Gentile __________,
+
+
+Mi chiamo Samir e faccio parte della comunità Airbnb. Speriamo che Lei stia bene. Ci dispiace che voglia
+disattivare il suo account. A ogni modo, ho appena elaborato la Sua richiesta e il Suo account è ora disattivato. Per maggiori informazioni sulla disattivazione dell'account, visiti la pagina:
+
+Disattivare o eliminare l'account
+Airbnb.it/help/article/240
+
+Rinnoviamo il nostro rammarico per la scelta fatta e speriamo di averLa presto di nuovo con noi. Con questa occasione, desideriamo ringraziarLa per averci contattato e Le ricordiamo che siamo disponibili 24/7 per assisterLa. Ogni volta che ne avesse bisogno, La preghiamo di contattarci e saremo lieti di offrirLe il nostro supporto con grande piacere. Può contattarci tramite il nostro sito web o al numero di telefono:
+📞 +39 0699366533 🇮🇹
+🌐 Airbnb.com/help/contact_us
+
+Avendo ricevuto conferma da parte Sua che tutto è a posto e che non sono necessarie ulteriori assistenze, procederemo
+alla chiusura di questa conversazione.
+
+
+Con i più cordiali saluti,
+Assistenza Airbnb
+
+
+
+
+🔆 SPEECH: ::::::::::::::::::::::::::::::::::::::::
+
+===========================
+
+
+🔆 Regulament: ::::::::::::::::::::::::::::::::::::
+Account deactivation
+https://confluence.airbnb.biz/display/LEN/Account+deactivation#Accountdeactivation-Userdeactivationflow
+
+Disattivare o eliminare l'account
+Airbnb.it/help/article/240
